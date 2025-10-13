@@ -43,12 +43,30 @@ title: Home
             </div>
         </div>
     </a>
-    <a href="/eco-4003a/equilibrium.html" class="topic-card">
+    <a href="/eco-4003a/compound-interest/qs.html" class="topic-card">
+        <div class="topic-card-content">
+            <i class="fas fa-percent topic-icon" aria-hidden="true"></i>
+            <div class="topic-text">
+                <h3>Compound Interest</h3>
+                <p>Using compound growth and decay, including continous compounding.</p>
+            </div>
+        </div>
+    </a>
+    <a href="/eco-4003a/equilibrium/qs.html" class="topic-card">
         <div class="topic-card-content">
             <i class="fas fa-balance-scale topic-icon" aria-hidden="true"></i>
             <div class="topic-text">
                 <h3>Equilibria</h3>
                 <p>Using supply and demand functions to find price and quantity equilibrium. Also includes questions on taxation.</p>
+            </div>
+        </div>
+    </a>
+    <a href="/eco-4003a/homogeneous-functions/qs.html" class="topic-card">
+        <div class="topic-card-content">
+            <i class="fas fa-circle topic-icon" aria-hidden="true"></i>
+            <div class="topic-text">
+                <h3>Homogeneous Functions</h3>
+                <p>Determining whether a function is homogeneous, and if so, determining the degree of homogeneity.</p>
             </div>
         </div>
     </a>
