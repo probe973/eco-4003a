@@ -18,7 +18,7 @@ title: Home
 <div class="topic-menu">
     <a href="/eco-4003a/quadratics/qs.html" class="topic-card">
         <div class="topic-card-content">
-            <i class="fas fa-square-x topic-icon" aria-hidden="true"></i>
+            <i class="fas fa-x topic-icon" aria-hidden="true"></i>
             <div class="topic-text">
                 <h3>Quadratics</h3>
                 <p>Questions on solving equations that can be in the form $ax^2+bx+c=0$ as well as the function $y=ax^2+bx+c$.</p>
@@ -27,7 +27,7 @@ title: Home
     </a>
     <a href="/eco-4003a/linear-simultaneous-eqns/qs.html" class="topic-card">
         <div class="topic-card-content">
-            <i class="fas fa-lines-leaning topic-icon" aria-hidden="true"></i>
+            <i class="fas fa-slash topic-icon" aria-hidden="true"></i>
             <div class="topic-text">
                 <h3>Linear Simultaneous Equations</h3>
                 <p>Solving where two linear equations intersect.</p>
@@ -36,7 +36,7 @@ title: Home
     </a>
     <a href="/eco-4003a/nonlinear-simultaneous-eqns/qs.html" class="topic-card">
         <div class="topic-card-content">
-            <i class="fas fa-bezier-curve topic-icon" aria-hidden="true"></i>
+            <i class="fas fa-curve topic-icon" aria-hidden="true"></i>
             <div class="topic-text">
                 <h3>Non-linear Simultaneous Equations</h3>
                 <p>Solving simultaneous equations that also use the skill of solving quadratic equations.</p>
@@ -45,7 +45,7 @@ title: Home
     </a>
     <a href="/eco-4003a/equilibrium.html" class="topic-card">
         <div class="topic-card-content">
-            <i class="fas fa-shop topic-icon" aria-hidden="true"></i>
+            <i class="fas fa-balance-scale topic-icon" aria-hidden="true"></i>
             <div class="topic-text">
                 <h3>Equilibria</h3>
                 <p>Using supply and demand functions to find price and quantity equilibrium. Also includes questions on taxation.</p>
