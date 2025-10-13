@@ -36,7 +36,7 @@ title: Home
     </a>
     <a href="/eco-4003a/nonlinear-simultaneous-eqns/qs.html" class="topic-card">
         <div class="topic-card-content">
-            <i class="fas fa-curve topic-icon" aria-hidden="true"></i>
+            <i class="fas fa-wave-sine topic-icon" aria-hidden="true"></i>
             <div class="topic-text">
                 <h3>Non-linear Simultaneous Equations</h3>
                 <p>Solving simultaneous equations that also use the skill of solving quadratic equations.</p>
