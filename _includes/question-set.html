@@ -1,0 +1,49 @@
+{% for section in site.data[include.file] %}
+  <section class="question-section">
+    
+    <h2>{{ section.section_title }}</h2>
+
+    <ol class="question-list">
+      {% for q in section.questions %}
+        <li class="question-item">
+          
+          <div class="question-text">
+            {{ q.question | markdownify }}
+          </div>
+
+          {% if q.image %}
+            <div class="question-image">
+              <img src="{{ q.image.path | relative_url }}" alt="{{ q.image.alt }}">
+            </div>
+          {% endif %}
+
+          {% if q.is_table_question %}
+            {% if q.table_context %}<ul class="table-context-list">{% for line in q.table_context %}<li>{{ line }}</li>{% endfor %}</ul>{% endif %}
+            <ul class="sub-question-list">
+              {% for item in q.table_items %}
+                <li>
+                  <p><strong>{{ item.item }}</strong> ({{ item.context }})</p>
+                  <details class="solution-details"><summary>Show Solution</summary><div class="solution-content"><p>{{ item.solution }}</p><p><strong>Answer:</strong> {{ item.answer }}</p></div></details>
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <details class="solution-details">
+              <summary>Show Solution</summary>
+              <div class="solution-content">
+                <p>{{ q.solution }}</p>
+                {% if q.solution_image %}
+                  <div class="solution-image">
+                    <img src="{{ q.solution_image.path | relative_url }}" alt="{{ q.solution_image.alt }}">
+                  </div>
+                {% endif %}
+                <p><strong>Answer:</strong> {{ q.answer }}</p>
+              </div>
+            </details>
+          {% endif %}
+
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+{% endfor %}
