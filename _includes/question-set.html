@@ -31,7 +31,9 @@
             <details class="solution-details">
               <summary>Show Solution</summary>
               <div class="solution-content">
-                <p>{{ q.solution }}</p>
+                <div class="solution-text">
+                {{ q.solution | markdownify }}
+                </div>
                 {% if q.solution_image %}
                   <div class="solution-image">
                     <img src="{{ q.solution_image.path | relative_url }}" alt="{{ q.solution_image.alt }}">
