@@ -71,7 +71,7 @@ strong { font-weight: bold; }
 .topic-card { background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 20px; text-decoration: none; color: #333; transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .topic-card:hover { transform: translateY(-5px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
 .topic-card-content { display: flex; align-items: center; gap: 20px; }
-.topic-icon { font-size: 2.5em; color: #ED61BA; }
+.topic-icon { font-size: 2.5em; color: #d4f5ff; }
 .topic-text h3 { margin: 0 0 5px 0; font-size: 1.3em; }
 .topic-text p { margin: 0; font-size: 0.9em; color: #666; }
 
