@@ -2,8 +2,11 @@
   questions:
     - question: |
         Solve the following system of equations:
-        $$ 5x+2y=24 $$
-        $$ y=x+5 $$
+
+        $$
+        5x+2y=24 \\
+        y=x+5
+        $$
       solution: |
         This system is best solved using the **substitution method**, as the second equation already gives us an expression for $y$.
 
@@ -30,8 +33,11 @@
 
     - question: |
         Solve the following system of equations:
-        $$ 8x-y=34 $$
-        $$ 3x+y=10 $$
+
+        $$
+        8x-y=34 \\
+        3x+y=10
+        $$
       solution: |
         This system is set up perfectly for the **elimination method**. The coefficients for $y$ are $-1$ and $+1$, so they will cancel out if we add the equations together.
 
@@ -61,8 +67,11 @@
 
     - question: |
         Solve the following system of equations:
-        $$ 10x+3y=25 $$
-        $$ 2y-6x=8 $$
+
+        $$
+        10x+3y=25 \\
+        2y-6x=8
+        $$
       solution: |
         This system can be solved using the **elimination method**, but first we need to rearrange the equations and make the coefficients of one variable match.
 
@@ -100,8 +109,11 @@
 
     - question: |
         Solve the following system of equations:
-        $$ P = \frac{71}{2} - 5Q $$
-        $$ 7P - 3Q = \frac{193}{2} $$
+
+        $$
+        P = \frac{71}{2} - 5Q \\
+        7P - 3Q = \frac{193}{2}
+        $$
       solution: |
         This system is best solved using **substitution**, as the first equation gives an expression for $P$.
 
@@ -135,9 +147,12 @@
   questions:
     - question: |
         Solve the following system of equations:
-        $$ y = 50 - 5x $$
-        $$ z = 4x + 7 $$
-        $$ y = x + 38 $$
+
+        $$
+        y = 50 - 5x \\
+        z = 4x + 7 \\
+        y = x + 38
+        $$
       solution: |
         This system can be solved quickly using **substitution**. We have two different expressions for $y$.
 
@@ -163,9 +178,12 @@
 
     - question: |
         Solve the following system of equations:
-        $$ x-y+4z=2 $$
-        $$ 2x+y+z=15 $$
-        $$ 5x+z=21 $$
+
+        $$
+        x-y+4z=2 \\
+        2x+y+z=15 \\
+        5x+z=21
+        $$
       solution: |
         We can solve this using **elimination**. Notice that the third equation is already missing the variable $y$. Our goal is to combine the first two equations to also eliminate $y$.
 
@@ -207,9 +225,12 @@
 
     - question: |
         Solve the following system of equations:
-        $$ 3x+2y-3z=2 $$
-        $$ 2x+y+z=10 $$
-        $$ x+3y+2z=12 $$
+
+        $$
+        3x+2y-3z=2 \\
+        2x+y+z=10 \\
+        x+3y+2z=12
+        $$
       solution: |
         This system requires the **elimination method** twice to reduce it to a 2-variable system.
 
