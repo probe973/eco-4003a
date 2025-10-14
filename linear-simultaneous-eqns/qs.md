@@ -9,4 +9,4 @@ Click <a href="LinSimEqn.pdf" target="_blank">here</a> to get a PDF of the quest
 Click <a href="LinSimEqn - solutions.pdf" target="_blank">here</a> to get a PDF of the solutions<br></p>
 
 
-<!-- {% include question-set.html file="quadratic_functions" %} -->
+{% include question-set.html file="linear_simultaneous_equations" %}
