@@ -60,9 +60,12 @@
         **1. Label and Add the Equations**
 
         Let's label the equations:
-        $$ (1) \quad 8x - y = 34 $$
-        $$ (2) \quad 3x + y = 10 $$
-
+        $$
+        \begin{align*}
+        (1) \quad 8x - y &= 34 \\
+        (2) \quad 3x + y &= 10
+        \end{align*}
+        $$
         Now, add equation (1) to equation (2):
 
         $$
@@ -107,9 +110,12 @@
         **1. Rearrange and Label**
 
         Rearrange the second equation to align the variables:
-        $$ (1) \quad 10x + 3y = 25 $$
-        $$ (2) \quad -6x + 2y = 8 $$
-
+        $$
+        \begin{align*}
+        (1) \quad 10x + 3y &= 25 \\
+        (2) \quad -6x + 2y &= 8
+        \end{align*}
+        $$
         **2. Scale the Equations**
 
         Let's eliminate $y$. The least common multiple of 3 and 2 is 6.
@@ -252,9 +258,14 @@
         We can solve this using **elimination**. Notice that the third equation is already missing the variable $y$.
 
         **1. Label the Equations**
-        $$ (1) \quad x - y + 4z = 2 $$
-        $$ (2) \quad 2x + y + z = 15 $$
-        $$ (3) \quad 5x + z = 21 $$
+        
+        $$
+        \begin{align*}
+        (1) \quad x - y + 4z &= 2 \\
+        (2) \quad 2x + y + z &= 15 \\
+        (3) \quad 5x + z &= 21
+        \end{align*}
+        $$
 
         **2. Eliminate y**
 
@@ -314,9 +325,14 @@
         This system requires the **elimination method** twice.
 
         **1. Label and Plan**
-        $$ (1) \quad 3x+2y-3z=2 $$
-        $$ (2) \quad 2x+y+z=10 $$
-        $$ (3) \quad x+3y+2z=12 $$
+        
+        $$
+        \begin{align*}
+        (1) \quad 3x+2y-3z &= 2 \\
+        (2) \quad 2x+y+z &= 10 \\
+        (3) \quad x+3y+2z &= 12
+        \end{align*}
+        $$
         Our plan is to eliminate $y$.
 
         **2. First Elimination**
