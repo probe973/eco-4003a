@@ -22,10 +22,14 @@
 
         Now, expand the brackets and solve the resulting equation for $x$:
 
-        $$ 5x + 2x + 10 = 24 $$
-        $$ 7x + 10 = 24 $$
-        $$ 7x = 14 $$
-        $$ x = 2 $$
+        $$
+        \begin{align*}
+        5x + 2x + 10 &= 24 \\
+        7x + 10 &= 24 \\
+        7x &= 14 \\
+        x &= 2
+        \end{align*}
+        $$
 
         ---
 
@@ -33,8 +37,12 @@
 
         Substitute the value of $x=2$ back into the simplest equation, $y=x+5$:
 
-        $$ y = 2 + 5 $$
-        $$ y = 7 $$
+        $$
+        \begin{align*}
+        y &= 2 + 5 \\
+        y &= 7
+        \end{align*}
+        $$
       answer: '$x=2$, $y=7$'
 
     - question: |
@@ -57,13 +65,16 @@
 
         Now, add equation (1) to equation (2):
 
-        $$ (8x+3x) + (-y+y) = (34+10) $$
-        $$ 11x = 44 $$
+        $$
+        \begin{align*}
+        (8x+3x) + (-y+y) &= (34+10) \\
+        11x &= 44
+        \end{align*}
+        $$
 
         **2. Solve for x**
 
-        $$ x = \frac{44}{11} $$
-        $$ x = 4 $$
+        $$ x = \frac{44}{11} \implies x = 4 $$
 
         ---
 
@@ -71,10 +82,14 @@
 
         Substitute $x=4$ back into either of the original equations. Let's use equation (2):
 
-        $$ 3(4) + y = 10 $$
-        $$ 12 + y = 10 $$
-        $$ y = 10 - 12 $$
-        $$ y = -2 $$
+        $$
+        \begin{align*}
+        3(4) + y &= 10 \\
+        12 + y &= 10 \\
+        y &= 10 - 12 \\
+        y &= -2
+        \end{align*}
+        $$
       answer: '$x=4$, $y=-2$'
 
     - question: |
@@ -97,7 +112,7 @@
 
         **2. Scale the Equations**
 
-        We need to find a common multiple for the coefficients of either $x$ or $y$. Let's eliminate $y$. The least common multiple of 3 and 2 is 6.
+        Let's eliminate $y$. The least common multiple of 3 and 2 is 6.
         - Multiply equation (1) by 2:
         $$ (3) \quad 20x + 6y = 50 $$
         - Multiply equation (2) by 3:
@@ -106,20 +121,30 @@
         **3. Eliminate and Solve for x**
 
         Now subtract equation (4) from equation (3) to eliminate $y$:
-        $$ (20x - (-18x)) + (6y - 6y) = (50 - 24) $$
-        $$ 38x = 26 $$
-        $$ x = \frac{26}{38} = \frac{13}{19} $$
+
+        $$
+        \begin{align*}
+        (20x - (-18x)) + (6y - 6y) &= (50 - 24) \\
+        38x &= 26 \\
+        x &= \frac{26}{38} = \frac{13}{19}
+        \end{align*}
+        $$
         
         ---
 
         **4. Solve for y**
 
-        Substitute $x = 13/19$ back into one of the original equations. Let's use $2y-6x=8$:
+        Substitute $x = 13/19$ back into $2y-6x=8$:
 
-        $$ 2y - 6(\frac{13}{19}) = 8 $$
-        $$ 2y - \frac{78}{19} = 8 $$
-        $$ 2y = 8 + \frac{78}{19} = \frac{152+78}{19} = \frac{230}{19} $$
-        $$ y = \frac{230}{38} = \frac{115}{19} $$
+        $$
+        \begin{align*}
+        2y - 6(\frac{13}{19}) &= 8 \\
+        2y - \frac{78}{19} &= 8 \\
+        2y &= 8 + \frac{78}{19} = \frac{152+78}{19} \\
+        2y &= \frac{230}{19} \\
+        y &= \frac{115}{19}
+        \end{align*}
+        $$
       answer: '$x = 13/19$, $y = 115/19$'
 
     - question: |
@@ -136,7 +161,7 @@
 
         **1. Substitute for P**
 
-        Substitute the expression for $P$ from the first equation into the second:
+        Substitute the expression for $P$ into the second equation:
 
         $$ 7\left(\frac{71}{2} - 5Q\right) - 3Q = \frac{193}{2} $$
 
@@ -144,11 +169,15 @@
 
         Expand the brackets and solve:
 
-        $$ \frac{497}{2} - 35Q - 3Q = \frac{193}{2} $$
-        $$ \frac{497}{2} - 38Q = \frac{193}{2} $$
-        $$ \frac{304}{2} = 38Q $$
-        $$ 152 = 38Q $$
-        $$ Q = 4 $$
+        $$
+        \begin{align*}
+        \frac{497}{2} - 35Q - 3Q &= \frac{193}{2} \\
+        \frac{497}{2} - 38Q &= \frac{193}{2} \\
+        \frac{304}{2} &= 38Q \\
+        152 &= 38Q \\
+        Q &= 4
+        \end{align*}
+        $$
 
         ---
 
@@ -156,9 +185,14 @@
 
         Substitute $Q=4$ back into the first equation:
 
-        $$ P = \frac{71}{2} - 5(4) $$
-        $$ P = \frac{71}{2} - 20 = \frac{71-40}{2} $$
-        $$ P = \frac{31}{2} $$
+        $$
+        \begin{align*}
+        P &= \frac{71}{2} - 5(4) \\
+        P &= \frac{71}{2} - 20 \\
+        P &= \frac{71-40}{2} \\
+        P &= \frac{31}{2}
+        \end{align*}
+        $$
       answer: '$P = 31/2$, $Q = 4$'
 
 - section_title: "Three Unknowns"
@@ -184,8 +218,13 @@
         
         **2. Solve for x**
 
-        $$ 12 = 6x $$
-        $$ x = 2 $$
+        $$
+        \begin{align*}
+        50 - 38 &= x + 5x \\
+        12 &= 6x \\
+        x &= 2
+        \end{align*}
+        $$
 
         ---
 
@@ -210,7 +249,7 @@
         \end{align*}
         $$
       solution: |
-        We can solve this using **elimination**. Notice that the third equation is already missing the variable $y$. Our goal is to combine the first two equations to also eliminate $y$.
+        We can solve this using **elimination**. Notice that the third equation is already missing the variable $y$.
 
         **1. Label the Equations**
         $$ (1) \quad x - y + 4z = 2 $$
@@ -219,36 +258,46 @@
 
         **2. Eliminate y**
 
-        Add equation (1) and (2) together. The $-y$ and $+y$ terms will cancel out.
+        Add equation (1) and (2) together.
 
-        $$ (x+2x) + (-y+y) + (4z+z) = (2+15) $$
-        $$ 3x + 5z = 17 \quad (4) $$
+        $$
+        \begin{align*}
+        (x+2x) + (-y+y) + (4z+z) &= (2+15) \\
+        3x + 5z &= 17 \quad (4)
+        \end{align*}
+        $$
 
         ---
 
         **3. Solve the New 2-Variable System**
 
-        We now have a simpler system with just $x$ and $z$:
-        $$ (3) \quad 5x + z = 21 $$
-        $$ (4) \quad 3x + 5z = 17 $$
+        We now have a simpler system. From (3), we can write $z = 21 - 5x$. Substitute this into (4):
 
-        From (3), we can write $z = 21 - 5x$. Substitute this into (4):
-
-        $$ 3x + 5(21 - 5x) = 17 $$
-        $$ 3x + 105 - 25x = 17 $$
-        $$ -22x = -88 \implies x = 4 $$
+        $$
+        \begin{align*}
+        3x + 5(21 - 5x) &= 17 \\
+        3x + 105 - 25x &= 17 \\
+        -22x &= -88 \\
+        x &= 4
+        \end{align*}
+        $$
 
         Now find $z$:
-        $$ z = 21 - 5(4) = 1 $$
+        $$ z = 21 - 5(4) \implies z = 1 $$
 
         ---
 
         **4. Find the Final Variable**
 
-        Substitute $x=4$ and $z=1$ back into one of the original equations to find $y$. Let's use (2):
+        Substitute $x=4$ and $z=1$ back into equation (2):
 
-        $$ 2(4) + y + (1) = 15 $$
-        $$ y + 9 = 15 \implies y = 6 $$
+        $$
+        \begin{align*}
+        2(4) + y + (1) &= 15 \\
+        y + 9 &= 15 \\
+        y &= 6
+        \end{align*}
+        $$
       answer: '$x=4$, $y=6$, $z=1$'
 
     - question: |
@@ -262,45 +311,67 @@
         \end{align*}
         $$
       solution: |
-        This system requires the **elimination method** twice to reduce it to a 2-variable system.
+        This system requires the **elimination method** twice.
 
         **1. Label and Plan**
         $$ (1) \quad 3x+2y-3z=2 $$
         $$ (2) \quad 2x+y+z=10 $$
         $$ (3) \quad x+3y+2z=12 $$
-        Our plan is to eliminate $y$. First using equations (1) and (2), and then using (2) and (3).
+        Our plan is to eliminate $y$.
 
         **2. First Elimination**
 
         Multiply equation (2) by -2 and add it to equation (1):
-        $$ (3x+2y-3z) + (-4x-2y-2z) = (2-20) $$
-        $$ -x - 5z = -18 \implies x + 5z = 18 \quad (4) $$
+
+        $$
+        \begin{align*}
+        (3x+2y-3z) + (-4x-2y-2z) &= (2-20) \\
+        -x - 5z &= -18 \\
+        x + 5z &= 18 \quad (4)
+        \end{align*}
+        $$
 
         **3. Second Elimination**
 
         Multiply equation (2) by -3 and add it to equation (3):
-        $$ (x+3y+2z) + (-6x-3y-3z) = (12-30) $$
-        $$ -5x - z = -18 \implies 5x + z = 18 \quad (5) $$
+
+        $$
+        \begin{align*}
+        (x+3y+2z) + (-6x-3y-3z) &= (12-30) \\
+        -5x - z &= -18 \\
+        5x + z &= 18 \quad (5)
+        \end{align*}
+        $$
 
         ---
 
         **4. Solve the New 2-Variable System**
 
-        We now solve the system:
-        $$ (4) \quad x + 5z = 18 $$
-        $$ (5) \quad 5x + z = 18 $$
-        From (5), we get $z = 18 - 5x$. Substitute this into (4):
-        $$ x + 5(18 - 5x) = 18 $$
-        $$ x + 90 - 25x = 18 $$
-        $$ -24x = -72 \implies x = 3 $$
+        We now solve the system from (4) and (5). From (5), we get $z = 18 - 5x$. Substitute this into (4):
+
+        $$
+        \begin{align*}
+        x + 5(18 - 5x) &= 18 \\
+        x + 90 - 25x &= 18 \\
+        -24x &= -72 \\
+        x &= 3
+        \end{align*}
+        $$
+        
         Now find $z$:
-        $$ z = 18 - 5(3) = 3 $$
+        $$ z = 18 - 5(3) \implies z = 3 $$
 
         ---
 
         **5. Find the Final Variable**
 
         Substitute $x=3$ and $z=3$ back into equation (2):
-        $$ 2(3) + y + (3) = 10 $$
-        $$ y + 9 = 10 \implies y = 1 $$
+
+        $$
+        \begin{align*}
+        2(3) + y + (3) &= 10 \\
+        y + 9 &= 10 \\
+        y &= 1
+        \end{align*}
+        $$
       answer: '$x=3$, $y=1$, $z=3$'
