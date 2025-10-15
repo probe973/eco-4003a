@@ -141,9 +141,11 @@
         0 &= x^2 - 8x + 15
         \end{align*}
         $$
+        
         Factorise the quadratic. We need two numbers that multiply to 15 and add to -8. The numbers are -3 and -5.
 
         $$ (x-3)(x-5) = 0 $$
+        
         This gives two solutions for $x$: $x=3$ and $x=5$.
 
         ---
@@ -173,6 +175,7 @@
         **1. Rearrange the First Equation**
 
         From $y+x^2=0$, we get an expression for $y$:
+        
         $$ y = -x^2 $$
 
         **2. Substitute y into the Second Equation**
@@ -192,6 +195,7 @@
         x(1-x)(1+x) &= 0
         \end{align*}
         $$
+        
         For the product to be zero, one of the factors must be zero. This gives three possible solutions for $x$:
         - $x = 0$
         - $1-x = 0 \implies x = 1$
