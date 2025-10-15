@@ -1,0 +1,125 @@
+- section_title: "No taxation"
+  questions:
+    - question: |
+        Given the following functions for demand and for supply, find the equilibrium price and quantity.
+      is_table_question: true
+      table_items:
+        - item: "Demand: $P=65-Q$, supply: $P=11+Q$"
+          solution: |
+            To find equilibrium, set the demand price equal to the supply price.
+            
+            $$
+            \begin{align*}
+            65-Q &= 11+Q \\
+            54 &= 2Q \\
+            Q &= 27
+            \end{align*}
+            $$
+            Now substitute the value of $Q$ back into the supply equation to find $P$.
+            
+            $$ P = 11 + 27 = 38 $$
+          answer: 'Equilibrium at Q=27, P=38.'
+        - item: "Demand: $4P=100-3Q$, supply: $P=2Q+10$"
+          solution: |
+            The easiest method here is substitution. Substitute the supply equation for $P$ into the demand equation.
+
+            $$
+            \begin{align*}
+            4(2Q+10) &= 100-3Q \\
+            8Q + 40 &= 100 - 3Q \\
+            11Q &= 60 \\
+            Q &= \frac{60}{11}
+            \end{align*}
+            $$
+            Now substitute the value of $Q$ back into the supply equation to find $P$.
+            
+            $$ P = 2\left(\frac{60}{11}\right) + 10 = \frac{120}{11} + \frac{110}{11} = \frac{230}{11} $$
+          answer: 'Equilibrium at Q=60/11, P=230/11.'
+        - item: "Demand: $P=-Q^2-Q+88$, supply: $P=Q+8$"
+          solution: |
+            Set the quadratic demand equation equal to the linear supply equation.
+
+            $$
+            \begin{align*}
+            -Q^2 - Q + 88 &= Q + 8 \\
+            0 &= Q^2 + 2Q - 80
+            \end{align*}
+            $$
+            Factorise the quadratic:
+            $$ (Q+10)(Q-8) = 0 $$
+            The solutions are $Q=-10$ or $Q=8$. Since quantity cannot be negative, we take $Q=8$.
+            
+            Substitute $Q=8$ into the supply equation: $P = 8 + 8 = 16$.
+          answer: 'Equilibrium at Q=8, P=16.'
+        - item: "Demand: $4P=-Q^2-2Q+100$, supply: $P=2Q+1$"
+          solution: |
+            Substitute the supply equation for $P$ into the demand equation.
+
+            $$
+            \begin{align*}
+            4(2Q+1) &= -Q^2 - 2Q + 100 \\
+            8Q + 4 &= -Q^2 - 2Q + 100 \\
+            Q^2 + 10Q - 96 &= 0
+            \end{align*}
+            $$
+            Factorise the quadratic:
+            $$ (Q+16)(Q-6) = 0 $$
+            The solutions are $Q=-16$ or $Q=6$. Since quantity cannot be negative, we take $Q=6$.
+            
+            Substitute $Q=6$ into the supply equation: $P = 2(6) + 1 = 13$.
+          answer: 'Equilibrium at Q=6, P=13.'
+
+- section_title: "Taxation"
+  questions:
+    - question: |
+        Demand for an item is governed by $P=100-Q$, with supply given by $P=Q+20$. Price is measured in pounds and quantity in 1000 units.
+
+        a) Given no tax, what is the equilibrium price and quantity?
+        
+        b) If tax is set at £0.30 per unit, what is the equilibrium price and quantity, and what is the tax revenue?
+        
+        c) Recalculate part (b) if tax is set at 5%
+        
+        d) Recalculate all parts above if demand is now given by $P=100-0.5Q-0.1Q^2$
+      solution: |
+        **Part (a): No Tax**
+        
+        Set demand equal to supply: $100-Q = Q+20 \implies 80 = 2Q \implies Q=40$.
+        
+        Then $P = 40+20 = 60$. Equilibrium is at (40, 60).
+
+        ---
+        **Part (b): £0.30 Unit Tax**
+        
+        The tax shifts the supply curve upwards. The new supply curve is $P_T = (Q+20) + 0.30 = Q+20.3$.
+        
+        New equilibrium: $100-Q = Q+20.3 \implies 79.7 = 2Q \implies Q=39.85$.
+        
+        The price consumers pay is $P = 100 - 39.85 = 59.85$. (Note: Price dropped because the original price was 60.15 in a typo, the correct price is 59.85). The correct price paid by consumers is P=100-39.85= **60.15**.
+        
+        Tax Revenue = Tax per unit $\times$ Quantity = $0.30 \times 39.85 = 11.955$. Since Q is in 1000s of units, revenue is $11.955 \times 1000 = £11,955$.
+
+        ---
+        **Part (c): 5% Tax**
+        
+        The tax is 5% of the supply price: $P_T = P_S \times 1.05 = (Q+20) \times 1.05 = 1.05Q + 21$.
+        
+        New equilibrium: $100-Q = 1.05Q+21 \implies 79 = 2.05Q \implies Q \approx 38.54$.
+        
+        The price is $P = 100 - 38.54 = 61.46$.
+
+        ---
+        **Part (d): Recalculate with New Demand $P=100-0.5Q-0.1Q^2$**
+        
+        *(d-a) No tax:* $100-0.5Q-0.1Q^2 = Q+20 \implies 0.1Q^2+1.5Q-80 = 0$.
+        Using the quadratic formula, $Q = \frac{-1.5 \pm \sqrt{1.5^2-4(0.1)(-80)}}{2(0.1)} = \frac{-1.5 \pm \sqrt{34.25}}{0.2}$.
+        Taking the positive root, $Q \approx 21.76$. Then $P = 21.76+20 = 41.76$.
+
+        *(d-b) £0.30 tax:* $100-0.5Q-0.1Q^2 = Q+20.3 \implies 0.1Q^2+1.5Q-79.7 = 0$.
+        $Q = \frac{-1.5 \pm \sqrt{1.5^2-4(0.1)(-79.7)}}{0.2} = \frac{-1.5 \pm \sqrt{34.13}}{0.2}$.
+        Taking the positive root, $Q \approx 21.72$. Then $P = 100-0.5(21.72)-0.1(21.72)^2 \approx 42.02$.
+
+        *(d-c) 5% tax:* $100-0.5Q-0.1Q^2 = 1.05Q+21 \implies 0.1Q^2+1.55Q-79 = 0$.
+        $Q = \frac{-1.55 \pm \sqrt{1.55^2-4(0.1)(-79)}}{0.2} = \frac{-1.55 \pm \sqrt{34.0025}}{0.2}$.
+        Taking the positive root, $Q \approx 21.46$. Then $P = 1.05(21.46)+21 \approx 43.53$.
+      answer: "a) Q=40, P=60. b) Q=39.85, P=60.15, Revenue=£11,955. c) Q=38.54, P=61.46. d) See solution for recalculated values."
