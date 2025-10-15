@@ -34,7 +34,7 @@ title: Home
             </div>
         </div>
     </a>
-    <a href="/eco-4003a/nonlinear-simultaneous-eqns/qs.html" class="topic-card">
+    <a href="/eco-4003a/non-linear-simultaneous-eqns/qs.html" class="topic-card">
         <div class="topic-card-content">
             <i class="fas fa-bezier-curve topic-icon" aria-hidden="true"></i>
             <div class="topic-text">
