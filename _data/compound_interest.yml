@@ -6,53 +6,45 @@
       table_items:
         - item: "Interest is not compounded (simple interest)"
           solution: |
-            Here, $P=5000$, $r=0.04$, and $t=5$. The interest is simply $5 \times 4\% = 20\%$ of the principal.
+            Using the simple interest formula $A = P(1+rt)$:
             
             $$
             \begin{align*}
             A &= 5000(1 + 0.04 \times 5) \\
-            A &= 5000(1 + 0.20) \\
-            A &= 5000(1.2) \\
             A &= 6000
             \end{align*}
             $$
           answer: '£6000.00'
         - item: "Interest is compounded yearly"
           solution: |
-            Here, $P=5000$, $r=0.04$, $t=5$. For yearly compounding, interest is applied once per year, so $n=1$.
+            Using the formula $A=P(1+r/n)^{nt}$ with $P=5000, r=0.04, t=5, n=1$:
 
             $$
             \begin{align*}
-            A &= 5000\left(1 + \frac{0.04}{1}\right)^{1 \times 5} \\
             A &= 5000(1.04)^5 \\
-            A &= 5000 \times 1.21665... \\
-            A &= 6083.26
+            A &\approx 6083.26
             \end{align*}
             $$
           answer: '£6083.26'
         - item: "Interest is compounded monthly"
           solution: |
-            Here, $P=5000$, $r=0.04$, $t=5$. For monthly compounding, interest is applied 12 times per year, so $n=12$.
+            Using the formula with $P=5000, r=0.04, t=5, n=12$:
 
             $$
             \begin{align*}
-            A &= 5000\left(1 + \frac{0.04}{12}\right)^{12 \times 5} \\
-            A &= 5000\left(1.00333...\right)^{60} \\
-            A &= 5000 \times 1.221... \\
-            A &= 6104.98
+            A &= 5000\left(1 + \frac{0.04}{12}\right)^{60} \\
+            A &\approx 6104.98
             \end{align*}
             $$
           answer: '£6104.98'
         - item: "Interest is compounded continuously"
           solution: |
-            Here, $P=5000$, $r=0.04$, and $t=5$. We use the formula for continuous compounding, $A=Pe^{rt}$.
+            Using the formula $A=Pe^{rt}$ with $P=5000, r=0.04, t=5$:
 
             $$
             \begin{align*}
-            A &= 5000 \times e^{0.04 \times 5} \\
             A &= 5000 \times e^{0.2} \\
-            A &= 5000 \times 1.2214... \\
-            A &= 6107.01
+            A &\approx 6107.01
             \end{align*}
             $$
           answer: '£6107.01'
@@ -63,27 +55,22 @@
       table_items:
         - item: "The depreciation is compounded quarterly"
           solution: |
-            Depreciation means the rate is negative. Here, $P=250$, $r=-0.12$, $t=8$. Quarterly compounding means $n=4$.
+            Using the formula with $P=250, r=-0.12, t=8, n=4$:
 
             $$
             \begin{align*}
-            A &= 250\left(1 + \frac{-0.12}{4}\right)^{4 \times 8} \\
-            A &= 250(1 - 0.03)^{32} \\
             A &= 250(0.97)^{32} \\
-            A &= 250 \times 0.377... \\
             A &\approx 94
             \end{align*}
             $$
           answer: '£94'
         - item: "The depreciation is compounded continuously"
           solution: |
-            Here, $P=250$, $r=-0.12$, and $t=8$. We use the continuous compounding formula, $A=Pe^{rt}$.
+            Using the formula $A=Pe^{rt}$ with $P=250, r=-0.12, t=8$:
 
             $$
             \begin{align*}
-            A &= 250 \times e^{-0.12 \times 8} \\
             A &= 250 \times e^{-0.96} \\
-            A &= 250 \times 0.382... \\
             A &\approx 96
             \end{align*}
             $$
@@ -100,42 +87,31 @@
         
         III. 7.8% compounded continuously
       solution: |
-        Let's calculate the final amount for a starting principal ($P$) of £1000 over 10 years ($t=10$) for each option.
+        Let's calculate the final amount for a principal ($P$) of £1000 over 10 years ($t=10$) for each option.
 
-        **I. 8% compounded yearly**
-        Here $r=0.08$, $n=1$.
-        $$ A = 1000(1+0.08)^{10} = 1000(2.1589) \approx 2158.92 $$
+        **I. 8% compounded yearly ($r=0.08, n=1$)**
+        $$ A = 1000(1.08)^{10} \approx 2158.92 $$
 
-        **II. 7.9% compounded monthly**
-        Here $r=0.079$, $n=12$.
-        $$ A = 1000\left(1+\frac{0.079}{12}\right)^{120} = 1000(2.1998) \approx 2199.80 $$
+        **II. 7.9% compounded monthly ($r=0.079, n=12$)**
+        $$ A = 1000\left(1+\frac{0.079}{12}\right)^{120} \approx 2197.70 $$
 
-        **III. 7.8% compounded continuously**
-        Here $r=0.078$.
-        $$ A = 1000e^{0.078 \times 10} = 1000e^{0.78} = 1000(2.1815) \approx 2181.50 $$
+        **III. 7.8% compounded continuously ($r=0.078$)**
+        $$ A = 1000e^{0.078 \times 10} \approx 2181.47 $$
 
         Comparing the three final amounts, the second option yields the highest return.
-      answer: 'Option II (7.9% compounded monthly) gives the greatest return (£2199.80).'
+      answer: 'Option II (7.9% compounded monthly) gives the greatest return (£2197.70).'
 
     - question: |
         A saver has the option to invest a sum of money at 12% compounded each year, for 20 years. What is the lowest continuously compounded interest rate, to 1 decimal place, that will match this option?
       solution: |
-        First, let's write an expression for the final amount, $A_1$, for the first option. Let $P$ be the principal.
+        We need to find the rate $r$ where the outcomes are equal. Let $P$ be the principal.
         
-        $$ A_1 = P(1+0.12)^{20} = P(1.12)^{20} $$
+        $$ P(1.12)^{20} = Pe^{20r} $$
+        
+        The principal $P$ cancels from both sides.
+        
+        $$ (1.12)^{20} = e^{20r} $$
 
-        Next, write the expression for the final amount, $A_2$, for the continuous compounding option with an unknown rate, $r$.
-
-        $$ A_2 = Pe^{r \times 20} = Pe^{20r} $$
-
-        We want to find the rate $r$ that makes these two amounts equal, so we set $A_1 = A_2$.
-
-        $$
-        \begin{align*}
-        P(1.12)^{20} &= Pe^{20r} \\
-        (1.12)^{20} &= e^{20r}
-        \end{align*}
-        $$
         To solve for $r$, we take the natural logarithm (ln) of both sides.
         
         $$
@@ -143,7 +119,7 @@
         \ln(1.12^{20}) &= \ln(e^{20r}) \\
         20 \ln(1.12) &= 20r \\
         r &= \ln(1.12) \\
-        r &\approx 0.1133...
+        r &\approx 0.113328...
         \end{align*}
         $$
         As a percentage to one decimal place, this is 11.3%.
