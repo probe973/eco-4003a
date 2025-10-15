@@ -5,7 +5,6 @@
       is_table_question: true
       table_items:
         - item: "Interest is not compounded (simple interest)"
-          context: "Use the formula $A = P(1+rt)$"
           solution: |
             Here, $P=5000$, $r=0.04$, and $t=5$. The interest is simply $5 \times 4\% = 20\%$ of the principal.
             
@@ -19,9 +18,8 @@
             $$
           answer: '£6000.00'
         - item: "Interest is compounded yearly"
-          context: "Use $A=P(1+r/n)^{nt}$ with $n=1$"
           solution: |
-            Here, $P=5000$, $r=0.04$, $t=5$, and interest is compounded once per year, so $n=1$.
+            Here, $P=5000$, $r=0.04$, $t=5$. For yearly compounding, interest is applied once per year, so $n=1$.
 
             $$
             \begin{align*}
@@ -33,9 +31,8 @@
             $$
           answer: '£6083.26'
         - item: "Interest is compounded monthly"
-          context: "Use $A=P(1+r/n)^{nt}$ with $n=12$"
           solution: |
-            Here, $P=5000$, $r=0.04$, $t=5$, and interest is compounded 12 times per year, so $n=12$.
+            Here, $P=5000$, $r=0.04$, $t=5$. For monthly compounding, interest is applied 12 times per year, so $n=12$.
 
             $$
             \begin{align*}
@@ -47,9 +44,8 @@
             $$
           answer: '£6104.98'
         - item: "Interest is compounded continuously"
-          context: "Use the formula $A=Pe^{rt}$"
           solution: |
-            Here, $P=5000$, $r=0.04$, and $t=5$. We use the formula for continuous compounding.
+            Here, $P=5000$, $r=0.04$, and $t=5$. We use the formula for continuous compounding, $A=Pe^{rt}$.
 
             $$
             \begin{align*}
@@ -66,9 +62,8 @@
       is_table_question: true
       table_items:
         - item: "The depreciation is compounded quarterly"
-          context: "Use $A=P(1+r/n)^{nt}$ with $r=-0.12$"
           solution: |
-            Depreciation means the rate is negative. Here, $P=250$, $r=-0.12$, $t=8$, and $n=4$ (quarterly).
+            Depreciation means the rate is negative. Here, $P=250$, $r=-0.12$, $t=8$. Quarterly compounding means $n=4$.
 
             $$
             \begin{align*}
@@ -81,9 +76,8 @@
             $$
           answer: '£94'
         - item: "The depreciation is compounded continuously"
-          context: "Use $A=Pe^{rt}$ with $r=-0.12$"
           solution: |
-            Here, $P=250$, $r=-0.12$, and $t=8$.
+            Here, $P=250$, $r=-0.12$, and $t=8$. We use the continuous compounding formula, $A=Pe^{rt}$.
 
             $$
             \begin{align*}
