@@ -83,17 +83,17 @@
         d) Recalculate all parts above if demand is now given by $P=100-0.5Q-0.1Q^2$
       solution: |
         **Part (a): No Tax**
-        
+
         Set demand equal to supply: $100-Q = Q+20 \implies 80 = 2Q \implies Q=40$.
         
         Then $P = 40+20 = 60$. Equilibrium is at (40, 60).
 
         ---
         **Part (b): £0.30 Unit Tax**
-        
+
         The tax shifts the supply curve upwards. The new supply curve is $P_T = (Q+20) + 0.30 = Q+20.3$.
         
-        New equilibrium: $100-Q = Q+20.3 \implies 79.7 = 2Q \implies Q=39.85$.
+        The new equilibrium is found by setting this equal to demand: $100-Q = Q+20.3 \implies 79.7 = 2Q \implies Q=39.85$.
         
         The price consumers pay is found using the demand curve: $P = 100 - 39.85 = 60.15$.
         
@@ -101,25 +101,23 @@
 
         ---
         **Part (c): 5% Tax**
-        
+
         The tax is 5% of the supply price: $P_T = P_S \times 1.05 = (Q+20) \times 1.05 = 1.05Q + 21$.
         
         New equilibrium: $100-Q = 1.05Q+21 \implies 79 = 2.05Q \implies Q \approx 38.54$.
         
-        The price is $P = 100 - 38.54 = 61.46$.
+        The price consumers pay is $P = 100 - 38.54 = 61.46$. The original price producers receive is $P_S = 38.54 + 20 = 58.54$.
+        
+        The tax per unit is the difference: $61.46 - 58.54 = 2.92$.
+        
+        Tax Revenue = Tax per unit $\times$ Quantity = $2.92 \times 38.54 = 112.5368$. Since Q is in 1000s of units, revenue is $112.5368 \times 1000 \approx £112,537$.
 
         ---
         **Part (d): Recalculate with New Demand $P=100-0.5Q-0.1Q^2$**
         
-        *(d-a) No tax:* $100-0.5Q-0.1Q^2 = Q+20 \implies 0.1Q^2+1.5Q-80 = 0$.
-        Using the quadratic formula, $Q = \frac{-1.5 + \sqrt{1.5^2-4(0.1)(-80)}}{0.2} = \frac{-1.5 + \sqrt{34.25}}{0.2}$.
-        Taking the positive root, $Q \approx 21.76$. Then $P = 21.76+20 = 41.76$.
+        *(d-a) No tax:* Set new demand equal to original supply: $100-0.5Q-0.1Q^2 = Q+20 \implies 0.1Q^2+1.5Q-80 = 0$. Using the quadratic formula, the positive root is $Q \approx 21.76$. Then $P = 21.76+20 = 41.76$.
 
-        *(d-b) £0.30 tax:* $100-0.5Q-0.1Q^2 = Q+20.3 \implies 0.1Q^2+1.5Q-79.7 = 0$.
-        $Q = \frac{-1.5 + \sqrt{1.5^2-4(0.1)(-79.7)}}{0.2} = \frac{-1.5 + \sqrt{34.13}}{0.2}$.
-        Taking the positive root, $Q \approx 21.72$. Then $P = 100-0.5(21.72)-0.1(21.72)^2 \approx 42.02$.
+        *(d-b) £0.30 tax:* Set new demand equal to taxed supply: $100-0.5Q-0.1Q^2 = Q+20.3 \implies 0.1Q^2+1.5Q-79.7 = 0$. Using the quadratic formula, the positive root is $Q \approx 21.72$. Then $P = 100-0.5(21.72)-0.1(21.72)^2 \approx 42.02$.
 
-        *(d-c) 5% tax:* $100-0.5Q-0.1Q^2 = 1.05Q+21 \implies 0.1Q^2+1.55Q-79 = 0$.
-        $Q = \frac{-1.55 + \sqrt{1.55^2-4(0.1)(-79)}}{0.2} = \frac{-1.55 + \sqrt{34.0025}}{0.2}$.
-        Taking the positive root, $Q \approx 21.46$. Then $P = 1.05(21.46)+21 \approx 43.53$.
-      answer: "a) Q=40, P=60. b) Q=39.85, P=60.15, Revenue=£11,955. c) Q≈38.54, P≈61.46. d) See solution for recalculated values."
+        *(d-c) 5% tax:* Set new demand equal to 5% taxed supply: $100-0.5Q-0.1Q^2 = 1.05Q+21 \implies 0.1Q^2+1.55Q-79 = 0$. Using the quadratic formula, the positive root is $Q \approx 21.46$. Then $P = 1.05(21.46)+21 \approx 43.53$.
+      answer: "a) Q=40, P=60. b) Q=39.85, P=60.15, Revenue=£11,955. c) Q≈38.54, P≈61.46, Revenue≈£112,537. d) See solution for recalculated values."
