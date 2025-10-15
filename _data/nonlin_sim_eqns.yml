@@ -137,3 +137,74 @@
         8x - x^2 &= 15 \\
         0 &= x^2 - 8x + 15
         \end{align*}
+        $$
+        Factorise the quadratic. We need two numbers that multiply to 15 and add to -8. The numbers are -3 and -5.
+
+        $$ (x-3)(x-5) = 0 $$
+        This gives two solutions for $x$: $x=3$ and $x=5$.
+
+        ---
+        **4. Find the Corresponding y Values**
+
+        Substitute each $x$ value back into the rearranged linear equation, $y=8-2x$.
+
+        If $x=3$:
+        $$ y = 8 - 2(3) = 8 - 6 = 2 $$
+
+        If $x=5$:
+        $$ y = 8 - 2(5) = 8 - 10 = -2 $$
+      answer: 'The solutions are $(3, 2)$ and $(5, -2)$.'
+
+    - question: |
+        Solve the following system of equations:
+
+        $$
+        \begin{align*}
+        y+x^2 &= 0 \\
+        xy+x &= 0
+        \end{align*}
+        $$
+      solution: |
+        This system can be solved efficiently using **substitution**.
+
+        **1. Rearrange the First Equation**
+
+        From $y+x^2=0$, we get an expression for $y$:
+        $$ y = -x^2 $$
+
+        **2. Substitute y into the Second Equation**
+
+        Replace $y$ in the second equation with $(-x^2)$.
+
+        $$ x(-x^2) + x = 0 $$
+
+        **3. Simplify and Solve for x**
+
+        This gives a cubic equation, which can be solved by factoring out a common term.
+
+        $$
+        \begin{align*}
+        -x^3 + x &= 0 \\
+        x(1-x^2) &= 0 \\
+        x(1-x)(1+x) &= 0
+        \end{align*}
+        $$
+        For the product to be zero, one of the factors must be zero. This gives three possible solutions for $x$:
+        - $x = 0$
+        - $1-x = 0 \implies x = 1$
+        - $1+x = 0 \implies x = -1$
+
+        ---
+        **4. Find the Corresponding y Values**
+
+        Substitute each of the three $x$ values back into the rearranged first equation, $y = -x^2$.
+
+        If $x=0$:
+        $$ y = -(0)^2 = 0 $$
+
+        If $x=1$:
+        $$ y = -(1)^2 = -1 $$
+
+        If $x=-1$:
+        $$ y = -(-1)^2 = -1 $$
+      answer: 'The three solutions are $(0, 0)$, $(1, -1)$, and $(-1, -1)$.'
