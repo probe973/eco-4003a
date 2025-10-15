@@ -26,9 +26,11 @@
         x^2 + 3x - 3 &= 0
         \end{align*}
         $$
+        
         This does not factor easily, so we must use the quadratic formula where $a=1, b=3, c=-3$.
 
         **3. Solve for x**
+        
         $$
         \begin{align*}
         x &= \frac{-b \pm \sqrt{b^2-4ac}}{2a} \\
@@ -37,6 +39,7 @@
         x &= \frac{-3 \pm \sqrt{21}}{2}
         \end{align*}
         $$
+        
         So we have two solutions for $x$: $x_1 = \frac{-3+\sqrt{21}}{2}$ and $x_2 = \frac{-3-\sqrt{21}}{2}$.
 
         ---
