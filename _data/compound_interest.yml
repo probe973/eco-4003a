@@ -122,5 +122,5 @@
         r &\approx 0.113328...
         \end{align*}
         $$
-        As a percentage to one decimal place, this is 11.3%.
-      answer: '11.3%'
+        As a percentage to one decimal place to at least match, this will be 11.4%.
+      answer: '11.4%'
