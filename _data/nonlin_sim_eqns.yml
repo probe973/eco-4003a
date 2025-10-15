@@ -1,0 +1,210 @@
+- section_title: "Solve"
+  questions:
+    - question: |
+        Solve the following system of equations:
+
+        $$
+        \begin{align*}
+        y &= x^2+5x+10 \\
+        y &= 2x+13
+        \end{align*}
+        $$
+      solution: |
+        Since both equations are equal to $y$, we can use the **substitution method** by setting the right-hand sides equal to each other.
+
+        **1. Set the Equations Equal**
+
+        $$ x^2+5x+10 = 2x+13 $$
+
+        **2. Rearrange into a Standard Quadratic Equation**
+
+        Move all terms to one side to set the equation to zero.
+
+        $$
+        \begin{align*}
+        x^2 + 5x - 2x + 10 - 13 &= 0 \\
+        x^2 + 3x - 3 &= 0
+        \end{align*}
+        $$
+        This does not factor easily, so we must use the quadratic formula where $a=1, b=3, c=-3$.
+
+        **3. Solve for x**
+        $$
+        \begin{align*}
+        x &= \frac{-b \pm \sqrt{b^2-4ac}}{2a} \\
+        x &= \frac{-3 \pm \sqrt{3^2-4(1)(-3)}}{2(1)} \\
+        x &= \frac{-3 \pm \sqrt{9+12}}{2} \\
+        x &= \frac{-3 \pm \sqrt{21}}{2}
+        \end{align*}
+        $$
+        So we have two solutions for $x$: $x_1 = \frac{-3+\sqrt{21}}{2}$ and $x_2 = \frac{-3-\sqrt{21}}{2}$.
+
+        ---
+        **4. Find the Corresponding y Values**
+
+        Substitute each $x$ value into the simpler linear equation, $y=2x+13$.
+        
+        For $x_1 = \frac{-3+\sqrt{21}}{2}$:
+        $$ y_1 = 2\left(\frac{-3+\sqrt{21}}{2}\right) + 13 = -3+\sqrt{21}+13 = 10+\sqrt{21} $$
+
+        For $x_2 = \frac{-3-\sqrt{21}}{2}$:
+        $$ y_2 = 2\left(\frac{-3-\sqrt{21}}{2}\right) + 13 = -3-\sqrt{21}+13 = 10-\sqrt{21} $$
+      answer: "The solutions are $(\frac{-3+\sqrt{21}}{2}, 10+\sqrt{21})$ and $(\frac{-3-\sqrt{21}}{2}, 10-\sqrt{21})$."
+
+    - question: |
+        Solve the following system of equations:
+
+        $$
+        \begin{align*}
+        y &= 20-4x-x^2 \\
+        5x+y &= 8
+        \end{align*}
+        $$
+      solution: |
+        This system is best solved using **substitution**. First, rearrange the linear equation to make $y$ the subject.
+
+        **1. Rearrange the Linear Equation**
+
+        From $5x+y=8$, we get:
+        $$ y = 8-5x $$
+
+        **2. Set the Expressions for y Equal**
+
+        Now, set this equal to the quadratic expression for $y$.
+
+        $$ 8-5x = 20-4x-x^2 $$
+
+        **3. Rearrange into a Standard Quadratic Equation**
+
+        Move all terms to the left-hand side to set the equation to zero.
+
+        $$
+        \begin{align*}
+        x^2 - 4x + 5x + 8 - 20 &= 0 \\
+        x^2 + x - 12 &= 0
+        \end{align*}
+        $$
+
+        **4. Solve for x by Factorising**
+
+        We need two numbers that multiply to -12 and add to 1. The numbers are 4 and -3.
+        
+        $$ (x+4)(x-3) = 0 $$
+        This gives two solutions for $x$: $x=-4$ and $x=3$.
+
+        ---
+        **5. Find the Corresponding y Values**
+
+        Substitute each $x$ value back into the rearranged linear equation, $y = 8-5x$.
+
+        If $x=-4$:
+        $$ y = 8 - 5(-4) = 8 + 20 = 28 $$
+
+        If $x=3$:
+        $$ y = 8 - 5(3) = 8 - 15 = -7 $$
+      answer: "The solutions are $(-4, 28)$ and $(3, -7)$."
+
+    - question: |
+        Solve the following system of equations:
+
+        $$
+        \begin{align*}
+        2x+y &= 8 \\
+        xy+x^2 &= 15
+        \end{align*}
+        $$
+      solution: |
+        Use the **substitution method**. Rearrange the linear equation to find an expression for $y$.
+
+        **1. Rearrange the Linear Equation**
+
+        From $2x+y=8$, we get:
+        $$ y = 8-2x $$
+
+        **2. Substitute y into the Second Equation**
+
+        Replace $y$ in the second equation with the expression $(8-2x)$.
+
+        $$ x(8-2x) + x^2 = 15 $$
+
+        **3. Simplify and Solve for x**
+
+        Expand the brackets and rearrange into a standard quadratic equation.
+
+        $$
+        \begin{align*}
+        8x - 2x^2 + x^2 &= 15 \\
+        8x - x^2 &= 15 \\
+        0 &= x^2 - 8x + 15
+        \end{align*}
+        $$
+        Factorise the quadratic. We need two numbers that multiply to 15 and add to -8. The numbers are -3 and -5.
+
+        $$ (x-3)(x-5) = 0 $$
+        This gives two solutions for $x$: $x=3$ and $x=5$.
+
+        ---
+        **4. Find the Corresponding y Values**
+
+        Substitute each $x$ value back into the rearranged linear equation, $y=8-2x$.
+
+        If $x=3$:
+        $$ y = 8 - 2(3) = 8 - 6 = 2 $$
+
+        If $x=5$:
+        $$ y = 8 - 2(5) = 8 - 10 = -2 $$
+      answer: "The solutions are $(3, 2)$ and $(5, -2)$."
+
+    - question: |
+        Solve the following system of equations:
+
+        $$
+        \begin{align*}
+        y+x^2 &= 0 \\
+        xy+x &= 0
+        \end{align*}
+        $$
+      solution: |
+        This system can be solved efficiently using **substitution**.
+
+        **1. Rearrange the First Equation**
+
+        From $y+x^2=0$, we get an expression for $y$:
+        $$ y = -x^2 $$
+
+        **2. Substitute y into the Second Equation**
+
+        Replace $y$ in the second equation with $(-x^2)$.
+
+        $$ x(-x^2) + x = 0 $$
+
+        **3. Simplify and Solve for x**
+
+        This gives a cubic equation, which can be solved by factoring out a common term.
+
+        $$
+        \begin{align*}
+        -x^3 + x &= 0 \\
+        x(1-x^2) &= 0 \\
+        x(1-x)(1+x) &= 0
+        \end{align*}
+        $$
+        For the product to be zero, one of the factors must be zero. This gives three possible solutions for $x$:
+        - $x = 0$
+        - $1-x = 0 \implies x = 1$
+        - $1+x = 0 \implies x = -1$
+
+        ---
+        **4. Find the Corresponding y Values**
+
+        Substitute each of the three $x$ values back into the rearranged first equation, $y = -x^2$.
+
+        If $x=0$:
+        $$ y = -(0)^2 = 0 $$
+
+        If $x=1$:
+        $$ y = -(1)^2 = -1 $$
+
+        If $x=-1$:
+        $$ y = -(-1)^2 = -1 $$
+      answer: "The three solutions are $(0, 0)$, $(1, -1)$, and $(-1, -1)$."
