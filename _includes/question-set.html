@@ -22,7 +22,7 @@
             <ul class="sub-question-list">
               {% for item in q.table_items %}
                 <li>
-                  <p><strong>{{ item.item }}</strong> ({{ item.context }})</p>
+                  <p><strong>{{ item.item }}</strong>{% if item.context %} ({{ item.context }}){% endif %}</p>
                   <details class="solution-details"><summary>Show Solution</summary><div class="solution-content"><p>{{ item.solution }}</p><p><strong>Answer:</strong> {{ item.answer }}</p></div></details>
                 </li>
               {% endfor %}
