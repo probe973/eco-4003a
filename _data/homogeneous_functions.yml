@@ -1,0 +1,166 @@
+- section_title: "Homogeneous Functions"
+  questions:
+    - question: |
+        Determine if the function is homogeneous. If so, give the degree.
+        $$f(x,y)=5x+2y$$
+      solution: |
+        To test for homogeneity, we replace $x$ with $kx$ and $y$ with $ky$.
+
+        $$
+        \begin{align*}
+        f(kx, ky) &= 5(kx) + 2(ky) \\
+        &= k(5x + 2y) \\
+        &= k^1 f(x,y)
+        \end{align*}
+        $$
+        The function can be written in the form $k^n f(x,y)$ where $n=1$.
+      answer: 'Yes, it is homogeneous of degree 1.'
+
+    - question: |
+        Determine if the function is homogeneous. If so, give the degree.
+        $$f(x,y)=x^2y^3$$
+      solution: |
+        Replace $x$ with $kx$ and $y$ with $ky$.
+
+        $$
+        \begin{align*}
+        f(kx, ky) &= (kx)^2(ky)^3 \\
+        &= (k^2x^2)(k^3y^3) \\
+        &= k^5 x^2y^3 \\
+        &= k^5 f(x,y)
+        \end{align*}
+        $$
+        The function can be written in the form $k^n f(x,y)$ where $n=5$.
+      answer: 'Yes, it is homogeneous of degree 5.'
+
+    - question: |
+        Determine if the function is homogeneous. If so, give the degree.
+        $$f(x,y)=x^2+y^3$$
+      solution: |
+        Replace $x$ with $kx$ and $y$ with $ky$.
+
+        $$
+        \begin{align*}
+        f(kx, ky) &= (kx)^2 + (ky)^3 \\
+        &= k^2x^2 + k^3y^3
+        \end{align*}
+        $$
+        Because the powers of $k$ are different ($k^2$ and $k^3$), it is impossible to factor out a single term $k^n$ from the entire expression.
+      answer: 'No, it is not homogeneous.'
+
+    - question: |
+        Determine if the function is homogeneous. If so, give the degree.
+        $$f(x,y)=4x^{0.2}y^{0.6}$$
+      solution: |
+        Replace $x$ with $kx$ and $y$ with $ky$.
+
+        $$
+        \begin{align*}
+        f(kx, ky) &= 4(kx)^{0.2}(ky)^{0.6} \\
+        &= 4(k^{0.2}x^{0.2})(k^{0.6}y^{0.6}) \\
+        &= k^{0.2}k^{0.6} (4x^{0.2}y^{0.6}) \\
+        &= k^{0.8} f(x,y)
+        \end{align*}
+        $$
+        The function can be written in the form $k^n f(x,y)$ where $n=0.8$.
+      answer: 'Yes, it is homogeneous of degree 0.8.'
+
+    - question: |
+        Determine if the function is homogeneous. If so, give the degree.
+        $$f(x,y)=\frac{5x}{2y}$$
+      solution: |
+        Replace $x$ with $kx$ and $y$ with $ky$.
+
+        $$
+        \begin{align*}
+        f(kx, ky) &= \frac{5(kx)}{2(ky)} \\
+        &= \frac{k(5x)}{k(2y)} \\
+        &= \frac{5x}{2y} \\
+        &= f(x,y)
+        \end{align*}
+        $$
+        This can be written as $k^0 f(x,y)$, since $k^0=1$.
+      answer: 'Yes, it is homogeneous of degree 0.'
+
+    - question: |
+        Determine if the function is homogeneous. If so, give the degree.
+        $$f(x,y)=\ln\left(\frac{x}{y}\right)$$
+      solution: |
+        Replace $x$ with $kx$ and $y$ with $ky$.
+
+        $$
+        \begin{align*}
+        f(kx, ky) &= \ln\left(\frac{kx}{ky}\right) \\
+        &= \ln\left(\frac{x}{y}\right) \\
+        &= f(x,y)
+        \end{align*}
+        $$
+        This can be written as $k^0 f(x,y)$, since $k^0=1$.
+      answer: 'Yes, it is homogeneous of degree 0.'
+
+    - question: |
+        Determine if the function is homogeneous. If so, give the degree.
+        $$f(x,y)=\ln{x}-\ln{2y}$$
+      solution: |
+        First, we can use log rules to simplify the function: $f(x,y) = \ln\left(\frac{x}{2y}\right)$. Now, replace $x$ with $kx$ and $y$ with $ky$.
+
+        $$
+        \begin{align*}
+        f(kx, ky) &= \ln\left(\frac{kx}{2(ky)}\right) \\
+        &= \ln\left(\frac{k x}{k 2y}\right) \\
+        &= \ln\left(\frac{x}{2y}\right) \\
+        &= f(x,y)
+        \end{align*}
+        $$
+        This can be written as $k^0 f(x,y)$.
+      answer: 'Yes, it is homogeneous of degree 0.'
+
+    - question: |
+        Determine if the function is homogeneous. If so, give the degree.
+        $$f(x,y)=x^{0.5}e^{\frac{x}{y}}$$
+      solution: |
+        Replace $x$ with $kx$ and $y$ with $ky$.
+
+        $$
+        \begin{align*}
+        f(kx, ky) &= (kx)^{0.5}e^{\frac{kx}{ky}} \\
+        &= k^{0.5}x^{0.5}e^{\frac{x}{y}} \\
+        &= k^{0.5}f(x,y)
+        \end{align*}
+        $$
+        The function can be written in the form $k^n f(x,y)$ where $n=0.5$.
+      answer: 'Yes, it is homogeneous of degree 0.5.'
+
+    - question: |
+        Determine if the function is homogeneous. If so, give the degree.
+        $$f(x,t)=xt-\frac{x^2}{t}$$
+      solution: |
+        Replace $x$ with $kx$ and $t$ with $kt$.
+
+        $$
+        \begin{align*}
+        f(kx, kt) &= (kx)(kt) - \frac{(kx)^2}{(kt)} \\
+        &= k^2xt - \frac{k^2x^2}{kt} \\
+        &= k^2xt - \frac{k x^2}{t}
+        \end{align*}
+        $$
+        Because the power of $k$ is different for each term ($k^2$ and $k$), it is impossible to factor out a single term $k^n$.
+      answer: 'No, it is not homogeneous.'
+
+    - question: |
+        Determine if the function is homogeneous. If so, give the degree.
+        $$f(x,t)=xt-\frac{x^3}{t}$$
+      solution: |
+        Replace $x$ with $kx$ and $t$ with $kt$.
+
+        $$
+        \begin{align*}
+        f(kx, kt) &= (kx)(kt) - \frac{(kx)^3}{(kt)} \\
+        &= k^2xt - \frac{k^3x^3}{kt} \\
+        &= k^2xt - \frac{k^2x^3}{t} \\
+        &= k^2\left(xt - \frac{x^3}{t}\right) \\
+        &= k^2 f(x,t)
+        \end{align*}
+        $$
+        The function can be written in the form $k^n f(x,t)$ where $n=2$.
+      answer: 'Yes, it is homogeneous of degree 2.'
