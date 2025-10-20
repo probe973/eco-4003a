@@ -78,9 +78,9 @@
         
         b) If tax is set at £0.30 per unit, what is the equilibrium price and quantity, and what is the tax revenue?
         
-        c) Recalculate part (b) if tax is set at 5%
+        c) What is the equilibrium price and quantity if tax is set at 5%
         
-        d) Recalculate all parts above if demand is now given by $P=100-0.5Q-0.1Q^2$
+        d) Recalculate the equilibrium price and quantity, for parts a, b, and c, if demand is now given by $P=100-0.5Q-0.1Q^2$
       solution: |
         **Part (a): No Tax**
 
@@ -106,12 +106,8 @@
         
         New equilibrium: $100-Q = 1.05Q+21 \implies 79 = 2.05Q \implies Q \approx 38.54$.
         
-        The price consumers pay is $P = 100 - 38.54 = 61.46$. The original price producers receive is $P_S = 38.54 + 20 = 58.54$.
+        The price consumers pay is $P = 100 - 38.54 = 61.46$.
         
-        The tax per unit is the difference: $61.46 - 58.54 = 2.92$.
-        
-        Tax Revenue = Tax per unit $\times$ Quantity = $2.92 \times 38.54 = 112.5368$. Since Q is in 1000s of units, revenue is $112.5368 \times 1000 \approx £112,537$.
-
         ---
         **Part (d): Recalculate with New Demand $P=100-0.5Q-0.1Q^2$**
         
@@ -120,4 +116,4 @@
         *(d-b) £0.30 tax:* Set new demand equal to taxed supply: $100-0.5Q-0.1Q^2 = Q+20.3 \implies 0.1Q^2+1.5Q-79.7 = 0$. Using the quadratic formula, the positive root is $Q \approx 21.72$. Then $P = 100-0.5(21.72)-0.1(21.72)^2 \approx 42.02$.
 
         *(d-c) 5% tax:* Set new demand equal to 5% taxed supply: $100-0.5Q-0.1Q^2 = 1.05Q+21 \implies 0.1Q^2+1.55Q-79 = 0$. Using the quadratic formula, the positive root is $Q \approx 21.46$. Then $P = 1.05(21.46)+21 \approx 43.53$.
-      answer: "a) Q=40, P=60. b) Q=39.85, P=60.15, Revenue=£11,955. c) Q≈38.54, P≈61.46, Revenue≈£112,537. d) See solution for recalculated values."
+      answer: "a) Q=40, P=60. b) Q=39.85, P=60.15. c) Q≈38.54, P≈61.46."
