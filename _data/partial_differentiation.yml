@@ -1,90 +1,68 @@
 - section_title: "Differentiation"
   questions:
     - question: |
-        For each of the functions below, $y=f(x)$, find the derived function, $\frac{dy}{dx}=f'(x)$
+        For each of the functions below, find the derived function, $\frac{dy}{dx}$.
       is_table_question: true
       table_items:
         - item: '$y=5x^3+10x-8$'
           solution: |
-            Apply the power rule to each term.
             $$ \frac{dy}{dx} = 15x^2 + 10 $$
           answer: '$\frac{dy}{dx} = 15x^2+10$'
         - item: '$y=\frac{10}{x^2}-5 \sqrt{x}$'
           solution: |
-            First, rewrite the function with negative and fractional exponents: $y=10x^{-2} - 5x^{1/2}$.
-
-            Now, apply the power rule:
+            Rewrite as $y=10x^{-2} - 5x^{1/2}$.
+            
             $$ \frac{dy}{dx} = -20x^{-3} - \frac{5}{2}x^{-1/2} $$
           answer: '$\frac{dy}{dx} = -20x^{-3} - \frac{5}{2}x^{-1/2}$'
         - item: '$y=\ln(8x)$'
           solution: |
-            Using log rules, we can first rewrite the function:
+            Rewrite as $y = \ln(8) + \ln(x)$. The derivative of the constant $\ln(8)$ is 0.
             
-            $$ y = \ln(8) + \ln(x) $$
-            
-            Since $\ln(8)$ is a constant, its derivative is 0. The derivative of $\ln(x)$ is $\frac{1}{x}$.
-            
-            $$ \frac{dy}{dx} = 0 + \frac{1}{x} $$
+            $$ \frac{dy}{dx} = \frac{1}{x} $$
           answer: '$\frac{dy}{dx} = \frac{1}{x}$'
         - item: '$y=e^{5x}+3e^{x^2}$'
           solution: |
-            Use the chain rule for each term: $\frac{d}{dx}(e^u) = e^u \cdot u'$.
-
-            $$ \frac{dy}{dx} = 5e^{5x} + 3e^{x^2}(2x) = 5e^{5x} + 6xe^{x^2} $$
+            $$ \frac{dy}{dx} = 5e^{5x} + 6xe^{x^2} $$
           answer: '$\frac{dy}{dx} = 5e^{5x} + 6xe^{x^2}$'
 
 - section_title: "Partial Derivatives"
   questions:
     - question: |
-        For each of the functions below, $z=f(x,y)$, find the six specified partial derivatives.
+        For each of the functions below, find the six specified partial derivatives.
       is_table_question: true
       table_items:
-        - item: '$z=x^2y^3+8x-4$'
-          solution: |
-            $$
-            \begin{align*}
-            \frac{\partial z}{\partial x} &= 2xy^3+8 \\
-            \frac{\partial z}{\partial y} &= 3x^2y^2 \\
-            \frac{\partial^2 z}{\partial x^2} &= \frac{\partial}{\partial x}(2xy^3+8) = 2y^3 \\
-            \frac{\partial^2 z}{\partial y^2} &= \frac{\partial}{\partial y}(3x^2y^2) = 6x^2y \\
-            \frac{\partial^2 z}{\partial y \partial x} &= \frac{\partial}{\partial y}(2xy^3+8) = 6xy^2 \\
-            \frac{\partial^2 z}{\partial x \partial y} &= \frac{\partial}{\partial x}(3x^2y^2) = 6xy^2
-            \end{align*}
-            $$
-          answer: 'See solution for all 6 derivatives.'
         - item: '$z=e^{x^2-y^2}$'
           solution: |
-            **First Derivatives (using Chain Rule):**
+            **First-Order Derivatives**
 
-            $\frac{\partial z}{\partial x} = e^{x^2-y^2} \cdot (2x) = 2xe^{x^2-y^2}$
+            Using the chain rule:
             
-            $\frac{\partial z}{\partial y} = e^{x^2-y^2} \cdot (-2y) = -2ye^{x^2-y^2}$
+            $$ \frac{\partial z}{\partial x} = e^{x^2-y^2} \cdot (2x) = 2xe^{x^2-y^2} $$
+            
+            $$ \frac{\partial z}{\partial y} = e^{x^2-y^2} \cdot (-2y) = -2ye^{x^2-y^2} $$
 
-            ---
-            **Second Derivatives (using Product Rule):**
+            **Second-Order Derivatives**
             
             To find $\frac{\partial^2 z}{\partial x^2}$, we use the product rule on $2x e^{x^2-y^2}$:
-            $$ \frac{\partial^2 z}{\partial x^2} = (2)(e^{x^2-y^2}) + (2x)(2xe^{x^2-y^2}) $$
-            Factor out $2e^{x^2-y^2}$:
-            $$ = 2e^{x^2-y^2}(1+2x^2) $$
             
-            To find $\frac{\partial^2 z}{\partial y^2}$, we use the product rule on $-2y e^{x^2-y^2}$:
-            $$ \frac{\partial^2 z}{\partial y^2} = (-2)(e^{x^2-y^2}) + (-2y)(-2ye^{x^2-y^2}) $$
-            Factor out $2e^{x^2-y^2}$:
-            $$ = 2e^{x^2-y^2}(-1+2y^2) $$
-
-            ---
-            **Cross Partial Derivatives:**
+            $$
+            \begin{align*}
+            \frac{\partial^2 z}{\partial x^2} &= (2)(e^{x^2-y^2}) + (2x)(2xe^{x^2-y^2}) \\
+            &= 2e^{x^2-y^2} + 4x^2e^{x^2-y^2} \\
+            &= 2e^{x^2-y^2}(1+2x^2)
+            \end{align*}
+            $$
             
-            $\frac{\partial^2 z}{\partial y \partial x} = \frac{\partial}{\partial y}(2xe^{x^2-y^2}) = 2x \cdot (-2y)e^{x^2-y^2} = -4xye^{x^2-y^2}$
+            **Cross-Partial Derivatives**
             
-            $\frac{\partial^2 z}{\partial x \partial y} = \frac{\partial}{\partial x}(-2ye^{x^2-y^2}) = -2y \cdot (2x)e^{x^2-y^2} = -4xye^{x^2-y^2}$
-          answer: 'See solution for all 6 derivatives.'
+            $$ \frac{\partial^2 z}{\partial y \partial x} = \frac{\partial}{\partial y}(2xe^{x^2-y^2}) = 2x \cdot e^{x^2-y^2}(-2y) = -4xye^{x^2-y^2} $$
+            By Young's theorem, $\frac{\partial^2 z}{\partial x \partial y} = \frac{\partial^2 z}{\partial y \partial x}$.
+          answer: 'See solution for all derivatives.'
 
 - section_title: "Implicit Differentiation"
   questions:
     - question: |
-        For each of the functions below, use implicit differentiation to find an expression for $\frac{dy}{dx}$
+        For each function, use implicit differentiation to find $\frac{dy}{dx}$.
       is_table_question: true
       table_items:
         - item: '$x^2+4y=0$'
@@ -92,7 +70,7 @@
             $$
             \begin{align*}
             2x + 4\frac{dy}{dx} &= 0 \\
-            \frac{dy}{dx} &= -\frac{2x}{4}
+            \frac{dy}{dx} &= -\frac{x}{2}
             \end{align*}
             $$
           answer: '$\frac{dy}{dx} = -\frac{x}{2}$'
@@ -101,7 +79,7 @@
             $$
             \begin{align*}
             2x - 2y\frac{dy}{dx} &= 0 \\
-            \frac{dy}{dx} &= \frac{2x}{2y}
+            \frac{dy}{dx} &= \frac{x}{y}
             \end{align*}
             $$
           answer: '$\frac{dy}{dx} = \frac{x}{y}$'
@@ -112,7 +90,7 @@
             \begin{align*}
             (4y + 4x\frac{dy}{dx}) + 2y\frac{dy}{dx} &= 0 \\
             \frac{dy}{dx}(4x+2y) &= -4y \\
-            \frac{dy}{dx} &= -\frac{4y}{4x+2y}
+            \frac{dy}{dx} &= -\frac{2y}{2x+y}
             \end{align*}
             $$
           answer: '$\frac{dy}{dx} = -\frac{2y}{2x+y}$'
@@ -120,7 +98,7 @@
 - section_title: "Total Differential"
   questions:
     - question: |
-        Find the total differential, $dz$, of $z=f(x,y)$
+        Find the total differential, $dz$, for each function.
       is_table_question: true
       table_items:
         - item: '$z=x^2+4y$'
@@ -141,7 +119,7 @@
           answer: '$dz = \frac{8x}{y^3} \, dx - \frac{12x^2}{y^4} \, dy$'
 
     - question: |
-        For each of the functions in the previous question, use the total derivative to find $\frac{dy}{dx}$ for the implicit function defined by $f(x,y)=0$. Confirm that parts (a) to (c) match the 'Implicit Differentiation' section.
+        For each function in the previous question, use the total derivative to find $\frac{dy}{dx}$ for the implicit function $f(x,y)=0$. Confirm the first three match the 'Implicit Differentiation' section.
       solution: |
         The total differential is $dz = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy$.
 
@@ -149,7 +127,7 @@
         
         $$ 0 = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy $$
 
-        We rearrange this to find the slope, $\frac{dy}{dx}$.
+        We rearrange this equation to find the slope, $\frac{dy}{dx}$:
 
         $$
         \begin{align*}
@@ -158,17 +136,17 @@
         \end{align*}
         $$
         
-        ---
-        
-        **a) For $z=x^2+4y$**:
+        **Applying this formula:**
+
+        a) For $z=x^2+4y$:
         $\frac{dy}{dx} = - \frac{2x}{4} = -\frac{x}{2}$. This **matches**.
 
-        **b) For $z=x^2-y^2$**:
+        b) For $z=x^2-y^2$:
         $\frac{dy}{dx} = - \frac{2x}{-2y} = \frac{x}{y}$. This **matches**.
 
-        **c) For $z=4xy+y^2$**:
+        c) For $z=4xy+y^2$:
         $\frac{dy}{dx} = - \frac{4y}{4x+2y} = -\frac{2y}{2x+y}$. This **matches**.
 
-        **d) For $z=\frac{4x^2}{y^3}$**:
+        d) For $z=\frac{4x^2}{y^3}$:
         $\frac{dy}{dx} = - \frac{8x/y^3}{-12x^2/y^4} = \frac{2y}{3x}$.
       answer: 'See solution. The first three match the previous section.'
