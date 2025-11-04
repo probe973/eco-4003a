@@ -239,7 +239,9 @@
           answer: '$dz = \frac{8x}{y^3} \, dx - \frac{12x^2}{y^4} \, dy$'
 
     - question: |
-        For each of the functions in the previous question, use the total derivative to find $\frac{dy}{dx}$ for the implicit function defined by $f(x,y)=0$. Confirm that parts (a) to (c) match the 'Implicit Differentiation' section.
+        For each of the functions in the previous question, use the total derivative to find $\frac{dy}{dx}$ for the implicit function defined by $f(x,y)=0$.
+
+        Confirm that the first three results match the answers from the 'Implicit Differentiation' section.
       solution: |
         The total differential is $dz = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy$.
 
@@ -259,7 +261,7 @@
         <strong>Applying this formula:</strong>
 
         a) For $z=x^2+4y$:
-        $\frac{dy}{dx} = - \frac{2x}{4} = -\frac{x}{2}$. This matches.
+        $\frac{dy}{dx} = - \frac{2x}{4} = -\frac{x}{2}$. This matches the result from the 'Implicit Differentiation' section.
 
         b) For $z=x^2-y^2$:
         $\frac{dy}{dx} = - \frac{2x}{-2y} = \frac{x}{y}$. This matches.
