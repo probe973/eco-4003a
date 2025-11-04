@@ -43,133 +43,122 @@
       table_items:
         - item: '$z=x^2-y^2$'
           solution: |
-            $\frac{\partial z}{\partial x} = 2x$
-            
-            $\frac{\partial z}{\partial y} = -2y$
-            
-            $\frac{\partial^2 z}{\partial x^2} = 2$
-            
-            $\frac{\partial^2 z}{\partial y^2} = -2$
-            
-            $\frac{\partial^2 z}{\partial y \partial x} = 0$
-            
-            $\frac{\partial^2 z}{\partial x \partial y} = 0$
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 2x \\
+            \frac{\partial z}{\partial y} &= -2y \\
+            \frac{\partial^2 z}{\partial x^2} &= 2 \\
+            \frac{\partial^2 z}{\partial y^2} &= -2 \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 0 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 0
+            \end{align*}
+            $$
           answer: 'See solution for all 6 derivatives.'
         - item: '$z=5x+3x^2-2y^3$'
           solution: |
-            $\frac{\partial z}{\partial x} = 5+6x$
-            
-            $\frac{\partial z}{\partial y} = -6y^2$
-            
-            $\frac{\partial^2 z}{\partial x^2} = 6$
-            
-            $\frac{\partial^2 z}{\partial y^2} = -12y$
-            
-            $\frac{\partial^2 z}{\partial y \partial x} = 0$
-            
-            $\frac{\partial^2 z}{\partial x \partial y} = 0$
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 5+6x \\
+            \frac{\partial z}{\partial y} &= -6y^2 \\
+            \frac{\partial^2 z}{\partial x^2} &= 6 \\
+            \frac{\partial^2 z}{\partial y^2} &= -12y \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 0 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 0
+            \end{align*}
+            $$
           answer: 'See solution for all 6 derivatives.'
         - item: '$z=xy$'
           solution: |
-            $\frac{\partial z}{\partial x} = y$
-            
-            $\frac{\partial z}{\partial y} = x$
-            
-            $\frac{\partial^2 z}{\partial x^2} = 0$
-            
-            $\frac{\partial^2 z}{\partial y^2} = 0$
-            
-            $\frac{\partial^2 z}{\partial y \partial x} = 1$
-            
-            $\frac{\partial^2 z}{\partial x \partial y} = 1$
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= y \\
+            \frac{\partial z}{\partial y} &= x \\
+            \frac{\partial^2 z}{\partial x^2} &= 0 \\
+            \frac{\partial^2 z}{\partial y^2} &= 0 \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 1 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 1
+            \end{align*}
+            $$
           answer: 'See solution for all 6 derivatives.'
         - item: '$z=x^2y^3+8x-4$'
           solution: |
-            $\frac{\partial z}{\partial x} = 2xy^3+8$
-            
-            $\frac{\partial z}{\partial y} = 3x^2y^2$
-            
-            $\frac{\partial^2 z}{\partial x^2} = 2y^3$
-            
-            $\frac{\partial^2 z}{\partial y^2} = 6x^2y$
-            
-            $\frac{\partial^2 z}{\partial y \partial x} = 6xy^2$
-            
-            $\frac{\partial^2 z}{\partial x \partial y} = 6xy^2$
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 2xy^3+8 \\
+            \frac{\partial z}{\partial y} &= 3x^2y^2 \\
+            \frac{\partial^2 z}{\partial x^2} &= 2y^3 \\
+            \frac{\partial^2 z}{\partial y^2} &= 6x^2y \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 6xy^2 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 6xy^2
+            \end{align*}
+            $$
           answer: 'See solution for all 6 derivatives.'
         - item: '$z=\frac{x^2}{y^2}$'
           solution: |
             Rewrite as $z=x^2y^{-2}$.
-            
-            $\frac{\partial z}{\partial x} = 2xy^{-2}$
-            
-            $\frac{\partial z}{\partial y} = -2x^2y^{-3}$
-            
-            $\frac{\partial^2 z}{\partial x^2} = 2y^{-2}$
-            
-            $\frac{\partial^2 z}{\partial y^2} = 6x^2y^{-4}$
-            
-            $\frac{\partial^2 z}{\partial y \partial x} = -4xy^{-3}$
-            
-            $\frac{\partial^2 z}{\partial x \partial y} = -4xy^{-3}$
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 2xy^{-2} \\
+            \frac{\partial z}{\partial y} &= -2x^2y^{-3} \\
+            \frac{\partial^2 z}{\partial x^2} &= 2y^{-2} \\
+            \frac{\partial^2 z}{\partial y^2} &= 6x^2y^{-4} \\
+            \frac{\partial^2 z}{\partial y \partial x} &= -4xy^{-3} \\
+            \frac{\partial^2 z}{\partial x \partial y} &= -4xy^{-3}
+            \end{align*}
+            $$
           answer: 'See solution for all 6 derivatives.'
         - item: '$z=\ln(xy)$'
           solution: |
             Rewrite using log rules: $z=\ln x + \ln y$.
-            
-            $\frac{\partial z}{\partial x} = 1/x$
-            
-            $\frac{\partial z}{\partial y} = 1/y$
-            
-            $\frac{\partial^2 z}{\partial x^2} = -x^{-2}$
-            
-            $\frac{\partial^2 z}{\partial y^2} = -y^{-2}$
-            
-            $\frac{\partial^2 z}{\partial y \partial x} = 0$
-            
-            $\frac{\partial^2 z}{\partial x \partial y} = 0$
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 1/x \\
+            \frac{\partial z}{\partial y} &= 1/y \\
+            \frac{\partial^2 z}{\partial x^2} &= -x^{-2} \\
+            \frac{\partial^2 z}{\partial y^2} &= -y^{-2} \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 0 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 0
+            \end{align*}
+            $$
           answer: 'See solution for all 6 derivatives.'
         - item: '$z=e^x+5e^{2y}$'
           solution: |
-            $\frac{\partial z}{\partial x} = e^x$
-            
-            $\frac{\partial z}{\partial y} = 10e^{2y}$
-            
-            $\frac{\partial^2 z}{\partial x^2} = e^x$
-            
-            $\frac{\partial^2 z}{\partial y^2} = 20e^{2y}$
-            
-            $\frac{\partial^2 z}{\partial y \partial x} = 0$
-            
-            $\frac{\partial^2 z}{\partial x \partial y} = 0$
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= e^x \\
+            \frac{\partial z}{\partial y} &= 10e^{2y} \\
+            \frac{\partial^2 z}{\partial x^2} &= e^x \\
+            \frac{\partial^2 z}{\partial y^2} &= 20e^{2y} \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 0 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 0
+            \end{align*}
+            $$
           answer: 'See solution for all 6 derivatives.'
         - item: '$z=x^2y-ye^x+xe^{-2y}$'
           solution: |
-            $\frac{\partial z}{\partial x} = 2xy-ye^x+e^{-2y}$
-            
-            $\frac{\partial z}{\partial y} = x^2-e^x-2xe^{-2y}$
-            
-            $\frac{\partial^2 z}{\partial x^2} = 2y-ye^x$
-            
-            $\frac{\partial^2 z}{\partial y^2} = 4xe^{-2y}$
-            
-            $\frac{\partial^2 z}{\partial y \partial x} = 2x-e^x-2e^{-2y}$
-            
-            $\frac{\partial^2 z}{\partial x \partial y} = 2x-e^x-2e^{-2y}$
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 2xy-ye^x+e^{-2y} \\
+            \frac{\partial z}{\partial y} &= x^2-e^x-2xe^{-2y} \\
+            \frac{\partial^2 z}{\partial x^2} &= 2y-ye^x \\
+            \frac{\partial^2 z}{\partial y^2} &= 4xe^{-2y} \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 2x-e^x-2e^{-2y} \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 2x-e^x-2e^{-2y}
+            \end{align*}
+            $$
           answer: 'See solution for all 6 derivatives.'
         - item: '$z=e^{x^2-y^2}$'
           solution: |
-            $\frac{\partial z}{\partial x} = 2xe^{x^2-y^2}$
-            
-            $\frac{\partial z}{\partial y} = -2ye^{x^2-y^2}$
-            
-            $\frac{\partial^2 z}{\partial x^2} = 2e^{x^2-y^2}(1+2x^2)$
-            
-            $\frac{\partial^2 z}{\partial y^2} = 2e^{x^2-y^2}(2y^2-1)$
-            
-            $\frac{\partial^2 z}{\partial y \partial x} = -4xye^{x^2-y^2}$
-            
-            $\frac{\partial^2 z}{\partial x \partial y} = -4xye^{x^2-y^2}$
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 2xe^{x^2-y^2} \\
+            \frac{\partial z}{\partial y} &= -2ye^{x^2-y^2} \\
+            \frac{\partial^2 z}{\partial x^2} &= 2e^{x^2-y^2}(1+2x^2) \\
+            \frac{\partial^2 z}{\partial y^2} &= 2e^{x^2-y^2}(2y^2-1) \\
+            \frac{\partial^2 z}{\partial y \partial x} &= -4xye^{x^2-y^2} \\
+            \frac{\partial^2 z}{\partial x \partial y} &= -4xye^{x^2-y^2}
+            \end{align*}
+            $$
           answer: 'See solution for all 6 derivatives.'
 
 - section_title: "Implicit Differentiation"
@@ -258,7 +247,7 @@
         
         $$ 0 = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy $$
 
-        We can rearrange this to find the slope, $\frac{dy}{dx}$.
+        We can rearrange this equation to find the slope, $\frac{dy}{dx}$.
 
         $$
         \begin{align*}
@@ -266,17 +255,27 @@
         \frac{dy}{dx} &= - \frac{\partial z / \partial x}{\partial z / \partial y}
         \end{align*}
         $$
-        Now we apply this to the functions from the previous question.
+        
+        ---
+        
+        Now we apply this to the functions.
 
         **a) For $z=x^2+4y$**:
-        $\frac{dy}{dx} = - \frac{2x}{4} = -\frac{x}{2}$. This **matches** the answer in the 'Implicit Differentiation' section.
+        
+        $$ \frac{dy}{dx} = - \frac{2x}{4} = -\frac{x}{2} $$
+        This **matches** the answer in the 'Implicit Differentiation' section.
 
         **b) For $z=x^2-y^2$**:
-        $\frac{dy}{dx} = - \frac{2x}{-2y} = \frac{x}{y}$. This **matches**.
+        
+        $$ \frac{dy}{dx} = - \frac{2x}{-2y} = \frac{x}{y} $$
+        This **matches**.
 
         **c) For $z=4xy+y^2$**:
-        $\frac{dy}{dx} = - \frac{4y}{4x+2y} = -\frac{2y}{2x+y}$. This **matches**.
+        
+        $$ \frac{dy}{dx} = - \frac{4y}{4x+2y} = -\frac{2y}{2x+y} $$
+        This **matches**.
 
         **d) For $z=\frac{4x^2}{y^3}$**:
-        $\frac{dy}{dx} = - \frac{8x/y^3}{-12x^2/y^4} = \frac{2y}{3x}$.
+        
+        $$ \frac{dy}{dx} = - \frac{8x/y^3}{-12x^2/y^4} = \frac{2y}{3x} $$
       answer: 'a) $-\frac{x}{2}$, b) $\frac{x}{y}$, c) $-\frac{2y}{2x+y}$, d) $\frac{2y}{3x}$. The first three match the previous section.'
