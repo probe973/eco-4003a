@@ -147,13 +147,13 @@
           answer: 'See solution for all 6 derivatives.'
         - item: '$z=e^{x^2-y^2}$'
           solution: |
-            **First-Order Derivatives (using the Chain Rule)**
+            <strong>First-Order Derivatives (using the Chain Rule)</strong>
             
             $$ \frac{\partial z}{\partial x} = e^{x^2-y^2} \cdot (2x) = 2xe^{x^2-y^2} $$
             
             $$ \frac{\partial z}{\partial y} = e^{x^2-y^2} \cdot (-2y) = -2ye^{x^2-y^2} $$
 
-            **Second-Order Derivatives (using the Product Rule)**
+            <strong>Second-Order Derivatives (using the Product Rule)</strong>
             
             To find $\frac{\partial^2 z}{\partial x^2}$, we use the product rule on $2x e^{x^2-y^2}$.
             
@@ -173,7 +173,7 @@
             \end{align*}
             $$
             
-            **Cross-Partial Derivatives**
+            <strong>Cross-Partial Derivatives</strong>
             
             $$ \frac{\partial^2 z}{\partial y \partial x} = \frac{\partial}{\partial y}(2xe^{x^2-y^2}) = 2x \cdot e^{x^2-y^2}(-2y) = -4xye^{x^2-y^2} $$
             By Young's theorem, $\frac{\partial^2 z}{\partial x \partial y}$ is the same.
@@ -256,10 +256,10 @@
         \end{align*}
         $$
         
-        **Applying this formula**
+        <strong>Applying this formula:</strong>
 
         a) For $z=x^2+4y$:
-        $\frac{dy}{dx} = - \frac{2x}{4} = -\frac{x}{2}$. This matches the result from the 'Implicit Differentiation' section.
+        $\frac{dy}{dx} = - \frac{2x}{4} = -\frac{x}{2}$. This matches.
 
         b) For $z=x^2-y^2$:
         $\frac{dy}{dx} = - \frac{2x}{-2y} = \frac{x}{y}$. This matches.
@@ -269,4 +269,4 @@
 
         d) For $z=\frac{4x^2}{y^3}$:
         $\frac{dy}{dx} = - \frac{8x/y^3}{-12x^2/y^4} = \frac{2y}{3x}$.
-      answer: 'a) -x/2, b) x/y, c) -2y/(2x+y), d) 2y/(3x). The first three results match the answers from the previous section.'
+      answer: 'a) -x/2, b) x/y, c) -2y/(2x+y), d) 2y/3x. The first three results match the answers from the previous section.'
