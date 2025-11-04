@@ -70,6 +70,15 @@ title: Home
             </div>
         </div>
     </a>
+    <a href="/eco-4003a/partial-differentiation/qs.html" class="topic-card">
+        <div class="topic-card-content">
+            <i class="fas fa-sliders-h topic-icon" aria-hidden="true"></i>
+            <div class="topic-text">
+                <h3>Partial Derivatives</h3>
+                <p>Looking at partial first order and second order derivatives, implicit differentiation, and total differential.</p>
+            </div>
+        </div>
+    </a>
 </div>
 
 </section>
