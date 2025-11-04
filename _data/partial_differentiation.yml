@@ -136,8 +136,8 @@
             
             $$
             \begin{align*}
-            \left[ (4)(y) + (4x)(\frac{dy}{dx}) \right] + 2y\frac{dy}{dx} &= 0 \\
-            4y + 4x\frac{dy}{dx} + 2y\frac{dy}{dx} &= 0 \\
+            (4y + 4x\frac{dy}{dx}) + 2y\frac{dy}{dx} &= 0 \\
+            4y + \frac{dy}{dx}(4x+2y) &= 0 \\
             \frac{dy}{dx}(4x+2y) &= -4y \\
             \frac{dy}{dx} &= -\frac{4y}{4x+2y} = -\frac{2y}{2x+y}
             \end{align*}
