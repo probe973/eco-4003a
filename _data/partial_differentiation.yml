@@ -1,68 +1,179 @@
 - section_title: "Differentiation"
   questions:
     - question: |
-        For each of the functions below, find the derived function, $\frac{dy}{dx}$.
+        For each of the functions below, $y=f(x)$, find the derived function, $\frac{dy}{dx}=f'(x)$
       is_table_question: true
       table_items:
         - item: '$y=5x^3+10x-8$'
           solution: |
+            Apply the power rule to each term.
             $$ \frac{dy}{dx} = 15x^2 + 10 $$
           answer: '$\frac{dy}{dx} = 15x^2+10$'
         - item: '$y=\frac{10}{x^2}-5 \sqrt{x}$'
           solution: |
-            Rewrite as $y=10x^{-2} - 5x^{1/2}$.
-            
+            First, rewrite the function with negative and fractional exponents: $y=10x^{-2} - 5x^{1/2}$.
+
+            Now, apply the power rule:
             $$ \frac{dy}{dx} = -20x^{-3} - \frac{5}{2}x^{-1/2} $$
           answer: '$\frac{dy}{dx} = -20x^{-3} - \frac{5}{2}x^{-1/2}$'
         - item: '$y=\ln(8x)$'
           solution: |
-            Rewrite as $y = \ln(8) + \ln(x)$. The derivative of the constant $\ln(8)$ is 0.
+            Using log rules, we can first rewrite the function:
             
-            $$ \frac{dy}{dx} = \frac{1}{x} $$
+            $$ y = \ln(8) + \ln(x) $$
+            
+            Since $\ln(8)$ is a constant, its derivative is 0. The derivative of $\ln(x)$ is $\frac{1}{x}$.
+            
+            $$ \frac{dy}{dx} = 0 + \frac{1}{x} $$
           answer: '$\frac{dy}{dx} = \frac{1}{x}$'
         - item: '$y=e^{5x}+3e^{x^2}$'
           solution: |
-            $$ \frac{dy}{dx} = 5e^{5x} + 6xe^{x^2} $$
+            Use the chain rule for each term: $\frac{d}{dx}(e^u) = e^u \cdot u'$.
+
+            $$ \frac{dy}{dx} = 5e^{5x} + 3e^{x^2}(2x) = 5e^{5x} + 6xe^{x^2} $$
           answer: '$\frac{dy}{dx} = 5e^{5x} + 6xe^{x^2}$'
 
 - section_title: "Partial Derivatives"
   questions:
     - question: |
-        For each of the functions below, find the six specified partial derivatives.
+        For each of the functions below, $z=f(x,y)$, find the six specified partial derivatives.
       is_table_question: true
       table_items:
+        - item: '$z=x^2-y^2$'
+          solution: |
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 2x \\
+            \frac{\partial z}{\partial y} &= -2y \\
+            \frac{\partial^2 z}{\partial x^2} &= 2 \\
+            \frac{\partial^2 z}{\partial y^2} &= -2 \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 0 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 0
+            \end{align*}
+            $$
+          answer: 'See solution for all 6 derivatives.'
+        - item: '$z=5x+3x^2-2y^3$'
+          solution: |
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 5+6x \\
+            \frac{\partial z}{\partial y} &= -6y^2 \\
+            \frac{\partial^2 z}{\partial x^2} &= 6 \\
+            \frac{\partial^2 z}{\partial y^2} &= -12y \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 0 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 0
+            \end{align*}
+            $$
+          answer: 'See solution for all 6 derivatives.'
+        - item: '$z=xy$'
+          solution: |
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= y \\
+            \frac{\partial z}{\partial y} &= x \\
+            \frac{\partial^2 z}{\partial x^2} &= 0 \\
+            \frac{\partial^2 z}{\partial y^2} &= 0 \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 1 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 1
+            \end{align*}
+            $$
+          answer: 'See solution for all 6 derivatives.'
+        - item: '$z=x^2y^3+8x-4$'
+          solution: |
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 2xy^3+8 \\
+            \frac{\partial z}{\partial y} &= 3x^2y^2 \\
+            \frac{\partial^2 z}{\partial x^2} &= 2y^3 \\
+            \frac{\partial^2 z}{\partial y^2} &= 6x^2y \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 6xy^2 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 6xy^2
+            \end{align*}
+            $$
+          answer: 'See solution for all 6 derivatives.'
+        - item: '$z=\frac{x^2}{y^2}$'
+          solution: |
+            Rewrite as $z=x^2y^{-2}$.
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 2xy^{-2} \\
+            \frac{\partial z}{\partial y} &= -2x^2y^{-3} \\
+            \frac{\partial^2 z}{\partial x^2} &= 2y^{-2} \\
+            \frac{\partial^2 z}{\partial y^2} &= 6x^2y^{-4} \\
+            \frac{\partial^2 z}{\partial y \partial x} &= -4xy^{-3} \\
+            \frac{\partial^2 z}{\partial x \partial y} &= -4xy^{-3}
+            \end{align*}
+            $$
+          answer: 'See solution for all 6 derivatives.'
+        - item: '$z=\ln(xy)$'
+          solution: |
+            Rewrite using log rules: $z=\ln x + \ln y$.
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 1/x \\
+            \frac{\partial z}{\partial y} &= 1/y \\
+            \frac{\partial^2 z}{\partial x^2} &= -x^{-2} \\
+            \frac{\partial^2 z}{\partial y^2} &= -y^{-2} \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 0 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 0
+            \end{align*}
+            $$
+          answer: 'See solution for all 6 derivatives.'
+        - item: '$z=e^x+5e^{2y}$'
+          solution: |
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= e^x \\
+            \frac{\partial z}{\partial y} &= 10e^{2y} \\
+            \frac{\partial^2 z}{\partial x^2} &= e^x \\
+            \frac{\partial^2 z}{\partial y^2} &= 20e^{2y} \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 0 \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 0
+            \end{align*}
+            $$
+          answer: 'See solution for all 6 derivatives.'
+        - item: '$z=x^2y-ye^x+xe^{-2y}$'
+          solution: |
+            $$
+            \begin{align*}
+            \frac{\partial z}{\partial x} &= 2xy-ye^x+e^{-2y} \\
+            \frac{\partial z}{\partial y} &= x^2-e^x-2xe^{-2y} \\
+            \frac{\partial^2 z}{\partial x^2} &= 2y-ye^x \\
+            \frac{\partial^2 z}{\partial y^2} &= 4xe^{-2y} \\
+            \frac{\partial^2 z}{\partial y \partial x} &= 2x-e^x-2e^{-2y} \\
+            \frac{\partial^2 z}{\partial x \partial y} &= 2x-e^x-2e^{-2y}
+            \end{align*}
+            $$
+          answer: 'See solution for all 6 derivatives.'
         - item: '$z=e^{x^2-y^2}$'
           solution: |
-            **First-Order Derivatives**
-
-            Using the chain rule:
+            **First-Order Derivatives (using the Chain Rule):**
             
             $$ \frac{\partial z}{\partial x} = e^{x^2-y^2} \cdot (2x) = 2xe^{x^2-y^2} $$
             
             $$ \frac{\partial z}{\partial y} = e^{x^2-y^2} \cdot (-2y) = -2ye^{x^2-y^2} $$
 
-            **Second-Order Derivatives**
+            **Second-Order Derivatives (using the Product Rule):**
             
-            To find $\frac{\partial^2 z}{\partial x^2}$, we use the product rule on $2x e^{x^2-y^2}$:
+            To find $\frac{\partial^2 z}{\partial x^2}$, we use the product rule on $2x e^{x^2-y^2}$.
             
             $$
             \begin{align*}
             \frac{\partial^2 z}{\partial x^2} &= (2)(e^{x^2-y^2}) + (2x)(2xe^{x^2-y^2}) \\
-            &= 2e^{x^2-y^2} + 4x^2e^{x^2-y^2} \\
             &= 2e^{x^2-y^2}(1+2x^2)
             \end{align*}
             $$
             
-            **Cross-Partial Derivatives**
+            **Cross-Partial Derivatives:**
             
-            $$ \frac{\partial^2 z}{\partial y \partial x} = \frac{\partial}{\partial y}(2xe^{x^2-y^2}) = 2x \cdot e^{x^2-y^2}(-2y) = -4xye^{x^2-y^2} $$
-            By Young's theorem, $\frac{\partial^2 z}{\partial x \partial y} = \frac{\partial^2 z}{\partial y \partial x}$.
+            $$ \frac{\partial^2 z}{\partial y \partial x} = \frac{\partial}{\partial y}(2xe^{x^2-y^2}) = -4xye^{x^2-y^2} $$
+            By Young's theorem, $\frac{\partial^2 z}{\partial x \partial y}$ is the same.
           answer: 'See solution for all derivatives.'
 
 - section_title: "Implicit Differentiation"
   questions:
     - question: |
-        For each function, use implicit differentiation to find $\frac{dy}{dx}$.
+        For each of the functions below, use implicit differentiation to find an expression for $\frac{dy}{dx}$
       is_table_question: true
       table_items:
         - item: '$x^2+4y=0$'
@@ -98,7 +209,7 @@
 - section_title: "Total Differential"
   questions:
     - question: |
-        Find the total differential, $dz$, for each function.
+        Find the total differential, $dz$, of $z=f(x,y)$.
       is_table_question: true
       table_items:
         - item: '$z=x^2+4y$'
@@ -119,7 +230,7 @@
           answer: '$dz = \frac{8x}{y^3} \, dx - \frac{12x^2}{y^4} \, dy$'
 
     - question: |
-        For each function in the previous question, use the total derivative to find $\frac{dy}{dx}$ for the implicit function $f(x,y)=0$. Confirm the first three match the 'Implicit Differentiation' section.
+        For each of the functions in the previous question, use the total derivative to find $\frac{dy}{dx}$ for the implicit function defined by $f(x,y)=0$. Confirm that parts (a) to (c) match the 'Implicit Differentiation' section.
       solution: |
         The total differential is $dz = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy$.
 
