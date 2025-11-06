@@ -23,7 +23,13 @@
               {% for item in q.table_items %}
                 <li>
                   <p><strong>{{ item.item }}</strong>{% if item.context %} ({{ item.context }}){% endif %}</p>
-                  <details class="solution-details"><summary>Show Solution</summary><div class="solution-content"><p>{{ item.solution }}</p><p><strong>Answer:</strong> {{ item.answer }}</p></div></details>
+                  <details class="solution-details">
+                    <summary>Show Solution</summary>
+                    <div class="solution-content">
+                      <div class="solution-text">{{ item.solution | markdownify }}</div>
+                      <p><strong>Answer:</strong> {{ item.answer }}</p>
+                    </div>
+                  </details>
                 </li>
               {% endfor %}
             </ul>
@@ -31,9 +37,7 @@
             <details class="solution-details">
               <summary>Show Solution</summary>
               <div class="solution-content">
-                <div class="solution-text">
-                {{ q.solution | markdownify }}
-                </div>
+                <div class="solution-text">{{ q.solution | markdownify }}</div>
                 {% if q.solution_image %}
                   <div class="solution-image">
                     <img src="{{ q.solution_image.path | relative_url }}" alt="{{ q.solution_image.alt }}">
