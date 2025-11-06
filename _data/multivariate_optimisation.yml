@@ -195,7 +195,9 @@
 
     - question: |
         A company producing two goods has an average cost function of:
+
         $$ AC=Q_1^2+2Q_2^2-8Q_1-12Q_2+100 $$
+        
         Find the quantities that minimise average cost, the average cost at this value, and confirm that this solution is a minimum.
       solution: |
         **First-Order Conditions**
