@@ -76,6 +76,8 @@
         
         $$ \frac{\partial z}{\partial y} = 2y $$
 
+        ---
+
         **b) First-Order Conditions**
         
         Set the partial derivatives to 0:
@@ -86,11 +88,15 @@
         
         The stationary point is at $(0,0)$. The value of the function is $z = 0^2+0^2=0$. The coordinates are $(0,0,0)$.
 
+        ---
+
         **c) Second-Order Conditions**
         
         $$ \frac{\partial^2 z}{\partial x^2} = 2, \quad \frac{\partial^2 z}{\partial y^2} = 2, \quad \frac{\partial^2 z}{\partial x \partial y} = 0 $$
         
         The discriminant is $D = \frac{\partial^2 z}{\partial x^2}\frac{\partial^2 z}{\partial y^2} - (\frac{\partial^2 z}{\partial x \partial y})^2 = (2)(2) - (0)^2 = 4$.
+
+        ---
 
         **d) Classification**
         
@@ -149,7 +155,13 @@
     - question: |
         Given the function $z=x^2y-2xy^2+3xy-1$:
         
-        a) Show that the first order conditions can be written as specified.
+        a) Show that the first order conditions can be written as:
+        $$
+        \begin{align*}
+        \frac{\partial z}{\partial x} &= y(2x-2y+3)=0 \\
+        \frac{\partial z}{\partial y} &= x(x-4y+3)=0
+        \end{align*}
+        $$
         
         b) Find the four possible coordinates of the stationary points, and the value of the function at these points.
       solution: |
