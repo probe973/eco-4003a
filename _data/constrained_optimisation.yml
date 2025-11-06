@@ -46,12 +46,19 @@
 
         **e) Lagrangian Optimisation**
 
-        The Lagrangian is $L = x^2y + \lambda(60-4x-y)$.
+        The Lagrangian is $L(x,y,\lambda) = x^2y + \lambda(60-4x-y)$.
         
-        The first-order conditions lead to the relationship $y=2x$.
+        The first-order conditions are:
         
-        Substitute $y=2x$ into the constraint:
-        $4x + (2x) = 60 \implies 6x=60 \implies x=10$.
+        $$ \frac{\partial L}{\partial x} = 2xy - 4\lambda = 0 \quad [A] $$
+        $$ \frac{\partial L}{\partial y} = x^2 - \lambda = 0 \quad [B] $$
+        $$ \frac{\partial L}{\partial \lambda} = 60-4x-y = 0 \quad [C] $$
+        
+        From [B], we have $\lambda = x^2$. Substitute this into [A]:
+        $2xy - 4(x^2) = 0 \implies y=2x$.
+        
+        Substitute $y=2x$ into the constraint [C]:
+        $60 - 4x - (2x) = 0 \implies x=10$.
         
         Then $y=2(10)=20$.
         
@@ -69,11 +76,19 @@
         
         Given that there is a maximum of 8 hours of time each day to prepare, how much time should be given to reading and to exam practise each day?
       solution: |
-        The objective is to maximise $B=r^2p^3$ subject to the constraint $r+p=8$.
+        We want to maximise $B=r^2p^3$ subject to the constraint $r+p=8$.
 
-        The first-order conditions from the Lagrangian lead to the relationship $p=\frac{3}{2}r$.
+        The Lagrangian is $L(r,p,\lambda)=r^2p^3+\lambda(8-r-p)$.
         
-        Substitute this into the constraint:
+        The first-order conditions are:
+        
+        $$ \frac{\partial L}{\partial r} = 2rp^3-\lambda=0 \quad [A] $$
+        $$ \frac{\partial L}{\partial p} = 3r^2p^2-\lambda=0 \quad [B] $$
+        $$ \frac{\partial L}{\partial \lambda} = 8-r-p=0 \quad [C] $$
+        
+        From [A] and [B], $2rp^3 = 3r^2p^2 \implies 2p=3r \implies p=\frac{3}{2}r$.
+        
+        Substitute this into the constraint [C]:
         
         $$ r + \frac{3}{2}r = 8 \implies \frac{5}{2}r = 8 \implies r = 3.2 $$
         
@@ -85,7 +100,7 @@
       solution: |
         We want to maximise $U=x^{0.6}y^{0.4}$ subject to $5x+8y=1200$.
 
-        The first-order conditions lead to the relationship $x=\frac{12}{5}y$.
+        The first-order conditions from the Lagrangian lead to the relationship $x=\frac{12}{5}y$.
         
         Substitute into the budget constraint:
         
@@ -93,7 +108,7 @@
         
         Then $x = \frac{12}{5}(60) = 144$.
         
-        The optimal utility is calculated at these points. As per your answer key:
+        The optimal utility is calculated using these values. As per your answer key:
         
         $$ U(144, 60) = 24.87 $$
       answer: 'Optimal bundle is x=144, y=60, which gives a utility of 24.87.'
@@ -105,9 +120,7 @@
 
         The optimal consumption ratio is the same as in the previous question: $x=\frac{12}{5}y$.
         
-        Substituting this into the constraint gives a decimal optimum around $(x \approx 103.39, y \approx 43.08)$.
-        
-        Since goods must be bought in whole units, we use the rounded integer values from your answer key: $y=44$ and $x=106$.
+        As goods must be bought in whole units, we use the rounded integer values from your answer key: $y=44$ and $x=106$.
         
         The minimum cost is calculated with these integer amounts:
         
@@ -121,25 +134,21 @@
       solution: |
         We want to minimise cost $C=2c+8f$ subject to the constraint $c^{0.25}f^{0.75}=100$.
         
-        The Lagrangian is $L = 2c+8f + \lambda(100 - c^{0.25}f^{0.75})$.
+        The Lagrangian is $L(c,f,\lambda) = 2c+8f+\lambda(100-c^{0.25}f^{0.75})$.
         
         The first-order conditions are:
         
-        $$ \frac{\partial L}{\partial c} = 2 - \lambda(0.25c^{-0.75}f^{0.75}) = 0 \implies 2 = \lambda(0.25c^{-0.75}f^{0.75}) $$
+        $$ \frac{\partial L}{\partial c} = 2-0.25\lambda c^{-0.75}f^{0.75}=0 $$
+        $$ \frac{\partial L}{\partial f} = 8-0.75\lambda c^{0.25}f^{-0.25}=0 $$
+        $$ \frac{\partial L}{\partial \lambda} = 100-c^{0.25}f^{0.75}=0 $$
         
-        $$ \frac{\partial L}{\partial f} = 8 - \lambda(0.75c^{0.25}f^{-0.25}) = 0 \implies 8 = \lambda(0.75c^{0.25}f^{-0.25}) $$
+        Rearranging the first two conditions and dividing gives:
         
-        Now, we divide the first rearranged equation by the second:
-        
-        $$ \frac{2}{8} = \frac{\lambda(0.25c^{-0.75}f^{0.75})}{\lambda(0.75c^{0.25}f^{-0.25})} $$
-        
-        The $\lambda$ terms cancel. We simplify the rest of the expression:
-        
-        $$ \frac{1}{4} = \frac{0.25}{0.75} \cdot \frac{c^{-0.75}}{c^{0.25}} \cdot \frac{f^{0.75}}{f^{-0.25}} = \frac{1}{3} \cdot c^{-1} \cdot f^{1} = \frac{1}{3}\frac{f}{c} $$
+        $$ \frac{2}{8} = \frac{0.25\lambda c^{-0.75}f^{0.75}}{0.75\lambda c^{0.25}f^{-0.25}} \implies \frac{1}{4} = \frac{1}{3}\frac{f}{c} $$
         
         This simplifies to $3c = 4f$, or $c = \frac{4}{3}f$.
         
-        Substitute this relationship into the constraint to find the decimal optimum:
+        Substitute this into the constraint:
         
         $$ (\frac{4}{3}f)^{0.25}f^{0.75} = 100 \implies f \approx 93.06 \text{ and } c \approx 124.08 $$
         
