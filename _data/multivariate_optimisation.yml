@@ -183,6 +183,7 @@
         $$
         
         b) Find the four possible coordinates of the stationary points, and the value of the function at these points.
+      solution: |
         **a) Show the First-Order Conditions**
 
         $$ \frac{\partial z}{\partial x} = 2xy - 2y^2 + 3y = y(2x-2y+3) = 0 $$
