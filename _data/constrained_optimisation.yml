@@ -20,11 +20,11 @@
       solution: |
         **a) Maximum units of y with x=8**
 
-        Cost of 8 units of x: $8 \times £4 = £32$.
+        $8 \times £4 = £32$
         
-        Remaining budget: $£60 - £32 = £28$.
+        $£60 - £32 = £28$
         
-        Maximum units of y: $£28 \div £1 = 28$.
+        $£28 \div £1 = 28$ items of y.
 
         **b) Utility for (8, 28)**
 
@@ -32,13 +32,13 @@
 
         **c) Utility for x=12**
 
-        Cost of 12 units of x: $12 \times £4 = £48$.
+        $12 \times £4 = £48$
         
-        Remaining budget: $£60 - £48 = £12$.
+        $£60 - £48 = £12$
         
-        Maximum units of y: $£12 \div £1 = 12$.
+        $£12 \div £1 = 12$ items of y.
         
-        Utility for (12, 12): $U(12,12) = 12^2 \times 12 = 1728$.
+        $$ U(12,12) = 12^2 \times 12 = 1728 $$
 
         **d) Constraint Function**
 
@@ -48,25 +48,27 @@
 
         The Lagrangian is $L(x,y,\lambda) = x^2y + \lambda(60-4x-y)$.
         
-        The first-order conditions are:
+        First-order conditions:
         
-        $$ \frac{\partial L}{\partial x} = 2xy - 4\lambda = 0 \quad [A] $$
-        $$ \frac{\partial L}{\partial y} = x^2 - \lambda = 0 \quad [B] $$
-        $$ \frac{\partial L}{\partial \lambda} = 60-4x-y = 0 \quad [C] $$
+        $\frac{\partial L}{\partial x} = 2xy - 4\lambda = 0 \quad [A]$
         
-        From [B], we have $\lambda = x^2$. Substitute this into [A]:
-        $2xy - 4(x^2) = 0 \implies y=2x$.
+        $\frac{\partial L}{\partial y} = x^2 - \lambda = 0 \quad [B]$
         
-        Substitute $y=2x$ into the constraint [C]:
-        $60 - 4x - (2x) = 0 \implies x=10$.
+        $\frac{\partial L}{\partial \lambda} = 60-4x-y = 0 \quad [C]$
         
-        Then $y=2(10)=20$.
+        From [A] and [B] we get the relationship $y=2x$.
         
-        The optimal utility is $U(10,20) = 10^2 \times 20 = 2000$.
+        Substitute this into the constraint [C]:
+        
+        $4x + 2x = 60 \implies x=10$.
+        
+        Then $y=20$.
+        
+        $$ U(10,20) = 10^2 \times 20 = 2000 $$
 
         **f) Conclusion**
 
-        The utility at the Lagrangian solution (2000) is higher than the other tested points (1792 and 1728), which suggests it is a maximum.
+        Since the utility from other points (1792, 1728) was lower than 2000, this is a maximum solution.
       answer: 'The optimal solution is 10 units of x and 20 units of y, yielding a maximum utility of 2000.'
 
     - question: |
@@ -74,58 +76,103 @@
         
         $$ B = r^2p^3 $$
         
-        Given that there is a maximum of 8 hours of time each day to prepare, how much time should be given to reading and to exam practise each day?
+        Given that there is a maximum of 8 hours of time each day to prepare, how much time would you give to reading and to exam practise each day?
       solution: |
-        We want to maximise $B=r^2p^3$ subject to the constraint $r+p=8$.
+        The constraint is $r+p \le 8$.
 
-        The Lagrangian is $L(r,p,\lambda)=r^2p^3+\lambda(8-r-p)$.
+        The Lagrangian is $L = r^2p^3 + \lambda(8-r-p)$.
         
         The first-order conditions are:
         
-        $$ \frac{\partial L}{\partial r} = 2rp^3-\lambda=0 \quad [A] $$
-        $$ \frac{\partial L}{\partial p} = 3r^2p^2-\lambda=0 \quad [B] $$
-        $$ \frac{\partial L}{\partial \lambda} = 8-r-p=0 \quad [C] $$
+        $\frac{\partial L}{\partial r} = 2rp^3 - \lambda = 0 \quad [A]$
         
-        From [A] and [B], $2rp^3 = 3r^2p^2 \implies 2p=3r \implies p=\frac{3}{2}r$.
+        $\frac{\partial L}{\partial p} = 3r^2p^2 - \lambda = 0 \quad [B]$
         
-        Substitute this into the constraint [C]:
+        From [A] and [B], we can establish the relationship $p = \frac{3}{2}r$.
         
-        $$ r + \frac{3}{2}r = 8 \implies \frac{5}{2}r = 8 \implies r = 3.2 $$
+        Substitute this into the constraint:
         
-        Then $p = 8 - 3.2 = 4.8$.
+        $r + \frac{3}{2}r = 8 \implies r = 3.2$.
+        
+        Then $p = 4.8$.
       answer: 'You should spend 3.2 hours on reading and 4.8 hours on exam practise.'
 
     - question: |
         A utility function is given by $U(x,y)=x^{0.6}y^{0.4}$. The cost of good x is £5 and good y is £8. The budget is £1200. Find the optimal number of each good to buy and the optimal utility.
       solution: |
-        We want to maximise $U=x^{0.6}y^{0.4}$ subject to $5x+8y=1200$.
+        The constraint is $5x+8y \le 1200$.
 
-        The first-order conditions from the Lagrangian lead to the relationship $x=\frac{12}{5}y$.
+        The Lagrangian is $L = x^{0.6}y^{0.4} + \lambda(1200-5x-8y)$.
         
-        Substitute into the budget constraint:
+        The first-order conditions are:
         
-        $$ 5(\frac{12}{5}y) + 8y = 1200 \implies 20y=1200 \implies y=60 $$
+        $\frac{\partial L}{\partial x} = 0.6x^{-0.4}y^{0.4} - 5\lambda = 0$
         
-        Then $x = \frac{12}{5}(60) = 144$.
+        $\frac{\partial L}{\partial y} = 0.4x^{0.6}y^{-0.6} - 8\lambda = 0$
         
-        The optimal utility is calculated using these values. As per your answer key:
+        From these, we find the relationship $x = \frac{12}{5}y$.
         
-        $$ U(144, 60) = 24.87 $$
+        Substitute into the constraint:
+        
+        $12y+8y=1200 \implies y=60$.
+        
+        Then $x=144$.
+        
+        $$ U = 144^{0.6} \times 60^{0.4} = 24.87 $$
       answer: 'Optimal bundle is x=144, y=60, which gives a utility of 24.87.'
 
     - question: |
-        For the utility function $U=x^{0.6}y^{0.4}$, a utility of 75 must be achieved. The cost of goods x and y are £5 and £8. Find the minimum cost and the number of goods that should be bought.
+        For the utility function of question 3, a utility of 75 must be achieved. The cost of goods x and y are £5 and £8.
+        
+        a) Write down the cost function.
+        
+        b) Write down the constraint function.
+        
+        c) Write down the Lagrangian.
+        
+        d) Find the minimum cost and the amount of the two goods that should be bought.
       solution: |
-        We want to minimise the cost $C = 5x+8y$ subject to the constraint $x^{0.6}y^{0.4} = 75$.
+        **a) Cost Function**
 
-        The optimal consumption ratio is the same as in the previous question: $x=\frac{12}{5}y$.
+        $$ C = 5x+8y $$
         
-        As goods must be bought in whole units, we use the rounded integer values from your answer key: $y=44$ and $x=106$.
+        **b) Constraint Function**
+
+        $$ x^{0.6}y^{0.4} = 75 $$
         
-        The minimum cost is calculated with these integer amounts:
+        **c) Lagrangian**
+
+        We want to MINIMISE cost, so the Lagrangian is:
+        $$ L = 5x+8y + \lambda(75 - x^{0.6}y^{0.4}) $$
+
+        **d) Minimum Cost Solution**
+        
+        The first-order conditions are:
+        
+        $$ \frac{\partial L}{\partial x} = 5 - 0.6\lambda x^{-0.4}y^{0.4} = 0 $$
+        
+        $$ \frac{\partial L}{\partial y} = 8 - 0.4\lambda x^{0.6}y^{-0.6} = 0 $$
+        
+        Rearranging these gives:
+        
+        $5 = 0.6\lambda x^{-0.4}y^{0.4}$ and $8 = 0.4\lambda x^{0.6}y^{-0.6}$.
+        
+        Dividing the two equations gives:
+        
+        $$ \frac{5}{8} = \frac{0.6\lambda x^{-0.4}y^{0.4}}{0.4\lambda x^{0.6}y^{-0.6}} = \frac{0.6}{0.4}\frac{y}{x} = \frac{3}{2}\frac{y}{x} $$
+        
+        This simplifies to $10x = 24y$, or $x=\frac{12}{5}y$.
+        
+        Substitute this into the constraint:
+        
+        $$ (\frac{12}{5}y)^{0.6}y^{0.4} = 75 \implies (\frac{12}{5})^{0.6} y = 75 $$
+        
+        As per your notes, this leads to the integer solutions $y=44$ and $x=106$.
+        
+        The cost is:
         
         $$ C = 5(106) + 8(44) = 530 + 352 = 882 $$
-      answer: 'To achieve 75 units of utility, one should buy 106 units of x and 44 units of y, for a minimum cost of £882.'
+      answer: 'The minimum cost is £882, buying 106 units of x and 44 units of y.'
     
     - question: |
         My blood sugar (S) is made up of chocolate (c) and fudge (f). It can be calculated with the formula:
@@ -150,7 +197,9 @@
         
         Substitute this into the constraint:
         
-        $$ (\frac{4}{3}f)^{0.25}f^{0.75} = 100 \implies f \approx 93.06 \text{ and } c \approx 124.08 $$
+        $$ (\frac{4}{3}f)^{0.25}f^{0.75} = 100 \implies (\frac{4}{3})^{0.25} f = 100 $$
+        
+        $$ f = \frac{100}{(4/3)^{0.25}} \approx 93.06 \text{ and } c \approx 124.08 $$
         
         Since we must buy whole units, we test the integer point (c=124, f=93). It satisfies the constraint ($S \ge 100$) and is the cheapest valid option.
         
