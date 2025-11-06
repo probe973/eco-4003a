@@ -149,7 +149,13 @@
     - question: |
         Given the function $z=x^2y-2xy^2+3xy-1$:
         
-        a) Show that the first order conditions can be written as specified.
+        a) Show that the first order conditions can be written as:
+        $$
+        \begin{align*}
+        \frac{\partial z}{\partial x} &= y(2x-2y+3)=0 \\
+        \frac{\partial z}{\partial y} &= x(x-4y+3)=0
+        \end{align*}
+        $$
         
         b) Find the four possible coordinates of the stationary points, and the value of the function at these points.
       solution: |
