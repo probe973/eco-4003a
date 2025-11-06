@@ -79,6 +79,15 @@ title: Home
             </div>
         </div>
     </a>
+    <a href="/eco-4003a/multivariate-optimisation/qs.html" class="topic-card">
+        <div class="topic-card-content">
+            <i class="fas fa-mountain topic-icon" aria-hidden="true"></i>
+            <div class="topic-text">
+                <h3>Multivariate Optimisation</h3>
+                <p>Using partial derivatives to find minima, maxima, and saddle points of a function.</p>
+            </div>
+        </div>
+    </a>
 </div>
 
 </section>
