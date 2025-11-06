@@ -1,0 +1,222 @@
+- section_title: "Single Variable Optimisation"
+  questions:
+    - question: |
+        A company has the following total revenue and total cost functions to produce a good:
+        
+        $$ TR=80Q $$
+        $$ TC=100+Q^2 $$
+        
+        a) Find a formula for the profit ($\pi$) the company makes on this good.
+        
+        b) Use one variable optimisation techniques to find the quantity for maximum profit.
+        
+        c) What is the profit at this quantity?
+        
+        d) Confirm that this quantity represents a maximum.
+      solution: |
+        **a) Find the Profit Function**
+
+        Profit ($\pi$) is Total Revenue minus Total Cost.
+        
+        $$
+        \begin{align*}
+        \pi &= TR - TC \\
+        \pi &= (80Q) - (100+Q^2) \\
+        \pi &= -Q^2 + 80Q - 100
+        \end{align*}
+        $$
+
+        **b) Find the Quantity for Maximum Profit**
+
+        To find the maximum, we take the first derivative with respect to Q and set it to 0.
+        
+        $$ \frac{d\pi}{dQ} = -2Q + 80 $$
+        
+        Set to 0:
+        $$ -2Q + 80 = 0 \implies 2Q = 80 \implies Q=40 $$
+
+        **c) Calculate the Profit**
+
+        Substitute $Q=40$ back into the profit function.
+        
+        $$ \pi = -(40)^2 + 80(40) - 100 = -1600 + 3200 - 100 = 1500 $$
+
+        **d) Confirm it is a Maximum**
+
+        We check the second derivative.
+        
+        $$ \frac{d^2\pi}{dQ^2} = -2 $$
+        
+        Since the second derivative is negative ($-2 < 0$), the stationary point at $Q=40$ is a maximum.
+      answer: 'a) $\pi = -Q^2+80Q-100$, b) Q=40, c) Profit=1500, d) The second derivative is -2, confirming a maximum.'
+
+- section_title: "Multivariable Optimisation"
+  questions:
+    - question: |
+        Consider the following function:
+        $$ z(x,y)=x^2+y^2 $$
+        a) Find the partial derivatives $\frac{\partial z}{\partial x}$ and $\frac{\partial z}{\partial y}$.
+        
+        b) Solve the first order conditions to find the coordinates $(x, y, z)$ of any stationary points.
+        
+        c) At the coordinates found, calculate the values of $\frac{\partial^2 z}{\partial x^2}$, $\frac{\partial^2 z}{\partial y^2}$, and the discriminant $D = \frac{\partial^2 z}{\partial x^2}\frac{\partial^2 z}{\partial y^2} - (\frac{\partial^2 z}{\partial x \partial y})^2$.
+        
+        d) Determine whether the point is a maximum, minimum, or saddle point.
+      solution: |
+        **a) First-Order Partial Derivatives**
+        
+        $$ \frac{\partial z}{\partial x} = 2x $$
+        $$ \frac{\partial z}{\partial y} = 2y $$
+
+        **b) First-Order Conditions**
+        
+        Set the partial derivatives to 0:
+        
+        $2x = 0 \implies x=0$
+        
+        $2y = 0 \implies y=0$
+        
+        The stationary point is at $(0,0)$. The value of the function is $z = 0^2+0^2=0$. The coordinates are $(0,0,0)$.
+
+        **c) Second-Order Conditions**
+        
+        $$ \frac{\partial^2 z}{\partial x^2} = 2 $$
+        $$ \frac{\partial^2 z}{\partial y^2} = 2 $$
+        $$ \frac{\partial^2 z}{\partial x \partial y} = 0 $$
+        
+        The discriminant is $D = (2)(2) - (0)^2 = 4$.
+
+        **d) Classification**
+        
+        Since $D > 0$ and $\frac{\partial^2 z}{\partial x^2} > 0$, the point $(0,0,0)$ is a local minimum.
+      answer: 'The point (0,0,0) is a local minimum.'
+
+    - question: |
+        Repeat the operations of the previous question for the following functions:
+      is_table_question: true
+      table_items:
+        - item: "$z=x^2-y^2+20$"
+          solution: |
+            $\frac{\partial z}{\partial x} = 2x = 0 \implies x=0$.
+            
+            $\frac{\partial z}{\partial y} = -2y = 0 \implies y=0$.
+            
+            The stationary point is at $(0,0)$, where $z=20$.
+            
+            $\frac{\partial^2 z}{\partial x^2} = 2$, $\frac{\partial^2 z}{\partial y^2} = -2$, $\frac{\partial^2 z}{\partial x \partial y} = 0$.
+            
+            $D = (2)(-2) - (0)^2 = -4$.
+            
+            Since $D < 0$, the point $(0,0,20)$ is a saddle point.
+          answer: 'The point (0,0,20) is a saddle point.'
+        - item: "$z=20x-x^2+6y-y^2$"
+          solution: |
+            $\frac{\partial z}{\partial x} = 20-2x = 0 \implies x=10$.
+            
+            $\frac{\partial z}{\partial y} = 6-2y = 0 \implies y=3$.
+            
+            The stationary point is at $(10,3)$, where $z = 20(10)-10^2+6(3)-3^2 = 109$.
+            
+            $\frac{\partial^2 z}{\partial x^2} = -2$, $\frac{\partial^2 z}{\partial y^2} = -2$, $\frac{\partial^2 z}{\partial x \partial y} = 0$.
+            
+            $D = (-2)(-2) - (0)^2 = 4$.
+            
+            Since $D > 0$ and $\frac{\partial^2 z}{\partial x^2} < 0$, the point $(10,3,109)$ is a local maximum.
+          answer: 'The point (10,3,109) is a local maximum.'
+        - item: "$z=2x^2+4x-2xy+y^2$"
+          solution: |
+            $\frac{\partial z}{\partial x} = 4x+4-2y = 0$
+            
+            $\frac{\partial z}{\partial y} = -2x+2y = 0 \implies x=y$.
+            
+            Substitute $x=y$ into the first condition: $4x+4-2x=0 \implies 2x=-4 \implies x=-2$.
+            
+            The stationary point is at $(-2,-2)$, where $z = 2(-2)^2+4(-2)-2(-2)(-2)+(-2)^2 = -4$.
+            
+            $\frac{\partial^2 z}{\partial x^2} = 4$, $\frac{\partial^2 z}{\partial y^2} = 2$, $\frac{\partial^2 z}{\partial x \partial y} = -2$.
+            
+            $D = (4)(2) - (-2)^2 = 8-4=4$.
+            
+            Since $D > 0$ and $\frac{\partial^2 z}{\partial x^2} > 0$, the point $(-2,-2,-4)$ is a local minimum.
+          answer: 'The point (-2,-2,-4) is a local minimum.'
+
+    - question: |
+        Given the function $z=x^2y-2xy^2+3xy-1$:
+        
+        a) Show that the first order conditions can be written as:
+        $$ \frac{\partial z}{\partial x} = y(2x-2y+3)=0 $$
+        $$ \frac{\partial z}{\partial y} = x(x-4y+3)=0 $$
+        
+        b) Find the four possible coordinates of the stationary points, and the value of the function at these points.
+      solution: |
+        **a) Show the First-Order Conditions**
+
+        $$ \frac{\partial z}{\partial x} = 2xy - 2y^2 + 3y $$
+        Factor out $y$:
+        $$ \frac{\partial z}{\partial x} = y(2x-2y+3) = 0 $$
+        
+        $$ \frac{\partial z}{\partial y} = x^2 - 4xy + 3x $$
+        Factor out $x$:
+        $$ \frac{\partial z}{\partial y} = x(x-4y+3) = 0 $$
+        
+        **b) Find the Stationary Points**
+        
+        We need to solve these two equations simultaneously. This requires case analysis.
+        
+        **Case 1: $y=0$**
+        If $y=0$, the first equation is satisfied. Substitute $y=0$ into the second equation:
+        $x(x-0+3)=0 \implies x(x+3)=0$. So $x=0$ or $x=-3$.
+        This gives two points: **(0,0)** and **(-3,0)**.
+
+        **Case 2: $x=0$**
+        If $x=0$, the second equation is satisfied. Substitute $x=0$ into the first equation:
+        $y(0-2y+3)=0 \implies y(-2y+3)=0$. So $y=0$ or $y=3/2$.
+        This gives two points: **(0,0)** (already found) and **(0, 3/2)**.
+        
+        **Case 3: $2x-2y+3=0$ and $x-4y+3=0$**
+        From the second equation, $x=4y-3$. Substitute this into the first:
+        $2(4y-3)-2y+3=0 \implies 8y-6-2y+3=0 \implies 6y-3=0 \implies y=1/2$.
+        Now find $x$: $x=4(1/2)-3 = 2-3 = -1$.
+        This gives the fourth point: **(-1, 1/2)**.
+        
+        **Function Values:**
+        
+        $z(0,0) = -1$
+        
+        $z(-3,0) = -1$
+        
+        $z(0,3/2) = -1$
+        
+        $z(-1,1/2) = (-1)^2(\frac{1}{2})-2(-1)(\frac{1}{2})^2+3(-1)(\frac{1}{2})-1 = \frac{1}{2}+\frac{1}{2}-\frac{3}{2}-1 = -\frac{3}{2}$
+      answer: 'The four points are (0,0,-1), (-3,0,-1), (0,3/2,-1), and (-1,1/2,-3/2).'
+
+    - question: |
+        A company producing two goods has an average cost function of:
+        $$ AC=Q_1^2+2Q_2^2-8Q_1-12Q_2+100 $$
+        Find the quantities that minimise average cost, the average cost at this value, and confirm that this solution is a minimum.
+      solution: |
+        **First-Order Conditions**
+        
+        Set the partial derivatives with respect to $Q_1$ and $Q_2$ to zero.
+        
+        $\frac{\partial AC}{\partial Q_1} = 2Q_1-8=0 \implies Q_1=4$.
+        
+        $\frac{\partial AC}{\partial Q_2} = 4Q_2-12=0 \implies Q_2=3$.
+
+        **Average Cost at Minimum**
+        
+        Substitute $Q_1=4$ and $Q_2=3$ into the AC function:
+        $AC = (4)^2+2(3)^2-8(4)-12(3)+100 = 16+18-32-36+100 = 66$.
+        
+        **Second-Order Conditions**
+        
+        $\frac{\partial^2 AC}{\partial Q_1^2} = 2$
+        
+        $\frac{\partial^2 AC}{\partial Q_2^2} = 4$
+        
+        $\frac{\partial^2 AC}{\partial Q_1 \partial Q_2} = 0$
+        
+        The discriminant is $D = (2)(4) - (0)^2 = 8$.
+        
+        Since $D > 0$ and $\frac{\partial^2 AC}{\partial Q_1^2} > 0$, the solution is a minimum.
+      answer: 'The average cost is minimised at Q1=4 and Q2=3, where the average cost is 66.'
