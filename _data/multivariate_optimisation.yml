@@ -109,34 +109,48 @@
       table_items:
         - item: "$z=x^2-y^2+20$"
           solution: |
-            $\frac{\partial z}{\partial x} = 2x = 0 \implies x=0$.
+            Find the first-order conditions:
             
-            $\frac{\partial z}{\partial y} = -2y = 0 \implies y=0$.
+            $\frac{\partial z}{\partial x} = 2x = 0 \implies x=0$
+            
+            $\frac{\partial z}{\partial y} = -2y = 0 \implies y=0$
             
             The stationary point is at $(0,0,20)$.
             
+            Find the second-order derivatives:
+            
             $\frac{\partial^2 z}{\partial x^2} = 2$, $\frac{\partial^2 z}{\partial y^2} = -2$, $\frac{\partial^2 z}{\partial x \partial y} = 0$.
+            
+            Calculate the discriminant:
             
             $D = (2)(-2) - (0)^2 = -4$.
             
-            Since $D < 0$, the point $(0,0,20)$ is a saddle point.
+            Since $D < 0$, the point is a saddle point.
           answer: 'The point (0,0,20) is a saddle point.'
         - item: "$z=20x-x^2+6y-y^2$"
           solution: |
+            Find the first-order conditions:
+
             $\frac{\partial z}{\partial x} = 20-2x = 0 \implies x=10$.
             
             $\frac{\partial z}{\partial y} = 6-2y = 0 \implies y=3$.
             
             The stationary point is at $(10,3)$, where $z = 109$.
             
+            Find the second-order derivatives:
+
             $\frac{\partial^2 z}{\partial x^2} = -2$, $\frac{\partial^2 z}{\partial y^2} = -2$, $\frac{\partial^2 z}{\partial x \partial y} = 0$.
+            
+            Calculate the discriminant:
             
             $D = (-2)(-2) - (0)^2 = 4$.
             
-            Since $D > 0$ and $\frac{\partial^2 z}{\partial x^2} < 0$, the point $(10,3,109)$ is a local maximum.
+            Since $D > 0$ and $\frac{\partial^2 z}{\partial x^2} < 0$, the point is a local maximum.
           answer: 'The point (10,3,109) is a local maximum.'
         - item: "$z=2x^2+4x-2xy+y^2$"
           solution: |
+            Find the first-order conditions:
+
             $\frac{\partial z}{\partial x} = 4x+4-2y = 0$
             
             $\frac{\partial z}{\partial y} = -2x+2y = 0 \implies x=y$.
@@ -145,17 +159,22 @@
             
             The stationary point is at $(-2,-2)$, where $z = -4$.
             
+            Find the second-order derivatives:
+
             $\frac{\partial^2 z}{\partial x^2} = 4$, $\frac{\partial^2 z}{\partial y^2} = 2$, $\frac{\partial^2 z}{\partial x \partial y} = -2$.
+            
+            Calculate the discriminant:
             
             $D = (4)(2) - (-2)^2 = 8-4=4$.
             
-            Since $D > 0$ and $\frac{\partial^2 z}{\partial x^2} > 0$, the point $(-2,-2,-4)$ is a local minimum.
+            Since $D > 0$ and $\frac{\partial^2 z}{\partial x^2} > 0$, the point is a local minimum.
           answer: 'The point (-2,-2,-4) is a local minimum.'
 
     - question: |
         Given the function $z=x^2y-2xy^2+3xy-1$:
         
         a) Show that the first order conditions can be written as:
+        
         $$
         \begin{align*}
         \frac{\partial z}{\partial x} &= y(2x-2y+3)=0 \\
@@ -164,7 +183,6 @@
         $$
         
         b) Find the four possible coordinates of the stationary points, and the value of the function at these points.
-      solution: |
         **a) Show the First-Order Conditions**
 
         $$ \frac{\partial z}{\partial x} = 2xy - 2y^2 + 3y = y(2x-2y+3) = 0 $$
