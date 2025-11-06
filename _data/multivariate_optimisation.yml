@@ -3,8 +3,12 @@
     - question: |
         A company has the following total revenue and total cost functions to produce a good:
         
-        $$ TR=80Q $$
-        $$ TC=100+Q^2 $$
+        $$
+        \begin{align*}
+        TR &= 80Q \\
+        TC &= 100+Q^2
+        \end{align*}
+        $$
         
         a) Find a formula for the profit ($\pi$) the company makes on this good.
         
@@ -28,12 +32,15 @@
 
         **b) Find the Quantity for Maximum Profit**
 
-        To find the maximum, we take the first derivative with respect to Q and set it to 0.
+        To find the maximum, we take the first derivative of the profit function with respect to Q and set it to 0.
         
         $$ \frac{d\pi}{dQ} = -2Q + 80 $$
         
-        Set to 0:
+        Setting to 0 gives:
+        
         $$ -2Q + 80 = 0 \implies 2Q = 80 \implies Q=40 $$
+
+        *Note: Alternatively, profit is maximised where Marginal Revenue (MR) equals Marginal Cost (MC). Here, $MR = \frac{d(TR)}{dQ} = 80$ and $MC = \frac{d(TC)}{dQ} = 2Q$. Setting $MR=MC$ gives $80 = 2Q$, which yields the same result of $Q=40$.*
 
         **c) Calculate the Profit**
 
@@ -43,7 +50,7 @@
 
         **d) Confirm it is a Maximum**
 
-        We check the second derivative.
+        We check the second derivative of the profit function.
         
         $$ \frac{d^2\pi}{dQ^2} = -2 $$
         
@@ -59,13 +66,14 @@
         
         b) Solve the first order conditions to find the coordinates $(x, y, z)$ of any stationary points.
         
-        c) At the coordinates found, calculate the values of $\frac{\partial^2 z}{\partial x^2}$, $\frac{\partial^2 z}{\partial y^2}$, and the discriminant $D = \frac{\partial^2 z}{\partial x^2}\frac{\partial^2 z}{\partial y^2} - (\frac{\partial^2 z}{\partial x \partial y})^2$.
+        c) At the coordinates found, calculate the values of the second-order partial derivatives and the discriminant.
         
         d) Determine whether the point is a maximum, minimum, or saddle point.
       solution: |
         **a) First-Order Partial Derivatives**
         
         $$ \frac{\partial z}{\partial x} = 2x $$
+        
         $$ \frac{\partial z}{\partial y} = 2y $$
 
         **b) First-Order Conditions**
@@ -80,11 +88,9 @@
 
         **c) Second-Order Conditions**
         
-        $$ \frac{\partial^2 z}{\partial x^2} = 2 $$
-        $$ \frac{\partial^2 z}{\partial y^2} = 2 $$
-        $$ \frac{\partial^2 z}{\partial x \partial y} = 0 $$
+        $$ \frac{\partial^2 z}{\partial x^2} = 2, \quad \frac{\partial^2 z}{\partial y^2} = 2, \quad \frac{\partial^2 z}{\partial x \partial y} = 0 $$
         
-        The discriminant is $D = (2)(2) - (0)^2 = 4$.
+        The discriminant is $D = \frac{\partial^2 z}{\partial x^2}\frac{\partial^2 z}{\partial y^2} - (\frac{\partial^2 z}{\partial x \partial y})^2 = (2)(2) - (0)^2 = 4$.
 
         **d) Classification**
         
@@ -101,7 +107,7 @@
             
             $\frac{\partial z}{\partial y} = -2y = 0 \implies y=0$.
             
-            The stationary point is at $(0,0)$, where $z=20$.
+            The stationary point is at $(0,0,20)$.
             
             $\frac{\partial^2 z}{\partial x^2} = 2$, $\frac{\partial^2 z}{\partial y^2} = -2$, $\frac{\partial^2 z}{\partial x \partial y} = 0$.
             
@@ -115,7 +121,7 @@
             
             $\frac{\partial z}{\partial y} = 6-2y = 0 \implies y=3$.
             
-            The stationary point is at $(10,3)$, where $z = 20(10)-10^2+6(3)-3^2 = 109$.
+            The stationary point is at $(10,3)$, where $z = 109$.
             
             $\frac{\partial^2 z}{\partial x^2} = -2$, $\frac{\partial^2 z}{\partial y^2} = -2$, $\frac{\partial^2 z}{\partial x \partial y} = 0$.
             
@@ -131,7 +137,7 @@
             
             Substitute $x=y$ into the first condition: $4x+4-2x=0 \implies 2x=-4 \implies x=-2$.
             
-            The stationary point is at $(-2,-2)$, where $z = 2(-2)^2+4(-2)-2(-2)(-2)+(-2)^2 = -4$.
+            The stationary point is at $(-2,-2)$, where $z = -4$.
             
             $\frac{\partial^2 z}{\partial x^2} = 4$, $\frac{\partial^2 z}{\partial y^2} = 2$, $\frac{\partial^2 z}{\partial x \partial y} = -2$.
             
@@ -143,40 +149,37 @@
     - question: |
         Given the function $z=x^2y-2xy^2+3xy-1$:
         
-        a) Show that the first order conditions can be written as:
-        $$ \frac{\partial z}{\partial x} = y(2x-2y+3)=0 $$
-        $$ \frac{\partial z}{\partial y} = x(x-4y+3)=0 $$
+        a) Show that the first order conditions can be written as specified.
         
         b) Find the four possible coordinates of the stationary points, and the value of the function at these points.
       solution: |
         **a) Show the First-Order Conditions**
 
-        $$ \frac{\partial z}{\partial x} = 2xy - 2y^2 + 3y $$
-        Factor out $y$:
-        $$ \frac{\partial z}{\partial x} = y(2x-2y+3) = 0 $$
+        $$ \frac{\partial z}{\partial x} = 2xy - 2y^2 + 3y = y(2x-2y+3) = 0 $$
         
-        $$ \frac{\partial z}{\partial y} = x^2 - 4xy + 3x $$
-        Factor out $x$:
-        $$ \frac{\partial z}{\partial y} = x(x-4y+3) = 0 $$
+        $$ \frac{\partial z}{\partial y} = x^2 - 4xy + 3x = x(x-4y+3) = 0 $$
         
         **b) Find the Stationary Points**
         
-        We need to solve these two equations simultaneously. This requires case analysis.
+        We need to solve these two equations simultaneously.
         
         **Case 1: $y=0$**
-        If $y=0$, the first equation is satisfied. Substitute $y=0$ into the second equation:
-        $x(x-0+3)=0 \implies x(x+3)=0$. So $x=0$ or $x=-3$.
+        
+        If $y=0$, the first equation is satisfied. Substitute into the second:
+        $x(x+3)=0 \implies x=0$ or $x=-3$.
         This gives two points: **(0,0)** and **(-3,0)**.
 
         **Case 2: $x=0$**
-        If $x=0$, the second equation is satisfied. Substitute $x=0$ into the first equation:
-        $y(0-2y+3)=0 \implies y(-2y+3)=0$. So $y=0$ or $y=3/2$.
-        This gives two points: **(0,0)** (already found) and **(0, 3/2)**.
+        
+        If $x=0$, the second equation is satisfied. Substitute into the first:
+        $y(-2y+3)=0 \implies y=0$ or $y=3/2$.
+        This gives **(0,0)** (already found) and **(0, 3/2)**.
         
         **Case 3: $2x-2y+3=0$ and $x-4y+3=0$**
+        
         From the second equation, $x=4y-3$. Substitute this into the first:
-        $2(4y-3)-2y+3=0 \implies 8y-6-2y+3=0 \implies 6y-3=0 \implies y=1/2$.
-        Now find $x$: $x=4(1/2)-3 = 2-3 = -1$.
+        $2(4y-3)-2y+3=0 \implies 6y-3=0 \implies y=1/2$.
+        Then $x=4(1/2)-3 = -1$.
         This gives the fourth point: **(-1, 1/2)**.
         
         **Function Values:**
@@ -187,7 +190,7 @@
         
         $z(0,3/2) = -1$
         
-        $z(-1,1/2) = (-1)^2(\frac{1}{2})-2(-1)(\frac{1}{2})^2+3(-1)(\frac{1}{2})-1 = \frac{1}{2}+\frac{1}{2}-\frac{3}{2}-1 = -\frac{3}{2}$
+        $z(-1,1/2) = -3/2$
       answer: 'The four points are (0,0,-1), (-3,0,-1), (0,3/2,-1), and (-1,1/2,-3/2).'
 
     - question: |
@@ -197,8 +200,6 @@
       solution: |
         **First-Order Conditions**
         
-        Set the partial derivatives with respect to $Q_1$ and $Q_2$ to zero.
-        
         $\frac{\partial AC}{\partial Q_1} = 2Q_1-8=0 \implies Q_1=4$.
         
         $\frac{\partial AC}{\partial Q_2} = 4Q_2-12=0 \implies Q_2=3$.
@@ -206,7 +207,7 @@
         **Average Cost at Minimum**
         
         Substitute $Q_1=4$ and $Q_2=3$ into the AC function:
-        $AC = (4)^2+2(3)^2-8(4)-12(3)+100 = 16+18-32-36+100 = 66$.
+        $AC = (4)^2+2(3)^2-8(4)-12(3)+100 = 66$.
         
         **Second-Order Conditions**
         
