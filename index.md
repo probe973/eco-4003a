@@ -88,6 +88,15 @@ title: Home
             </div>
         </div>
     </a>
+    <a href="/eco-4003a/constrained-optimisation/qs.html" class="topic-card">
+        <div class="topic-card-content">
+            <i class="fas fa-lock topic-icon" aria-hidden="true"></i>
+            <div class="topic-text">
+                <h3>Constrained Optimisation</h3>
+                <p>Using the Lagrangian method to find optimal solutions given a constraint function.</p>
+            </div>
+        </div>
+    </a>
 </div>
 
 </section>
