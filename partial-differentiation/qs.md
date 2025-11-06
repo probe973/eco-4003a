@@ -3,7 +3,7 @@ layout: default
 title: Partial Differentiation Practice Questions
 ---
 
-<h1>Practice Questions: Quadratic Functions</h1>
+<h1>Practice Questions: Parital Differentiation</h1>
 <p>If you need to print these (please be mindful of the environment) then:<br>
 Click <a href="PD.pdf" target="_blank">here</a> to get a PDF of the questions<br>
 Click <a href="PD - solutions.pdf" target="_blank">here</a> to get a PDF of the solutions<br></p>
