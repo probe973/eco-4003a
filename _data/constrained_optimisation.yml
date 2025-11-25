@@ -177,6 +177,7 @@
     - question: |
         My blood sugar (S) is made up of chocolate (c) and fudge (f). It can be calculated with the formula:
         $$ S=c^{0.25}f^{0.75} $$
+        
         It is important that my blood sugar is 100 units during each day. The cost of 1 chocolate is 2p and the cost of 1 fudge is 8p. How much of each should I buy so that I minimise the cost?
       solution: |
         We want to minimise cost $C=2c+8f$ subject to the constraint $c^{0.25}f^{0.75}=100$.
