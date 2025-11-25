@@ -167,7 +167,7 @@
         
         $$ (\frac{12}{5}y)^{0.6}y^{0.4} = 75 \implies (\frac{12}{5})^{0.6} y = 75 $$
         
-        As per your notes, this leads to the integer solutions $y=44$ and $x=106$.
+        This leads to the integer solutions $y=44$ and $x=106$.
         
         The cost is:
         
