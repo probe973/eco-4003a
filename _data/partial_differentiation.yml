@@ -36,7 +36,7 @@
 - section_title: "Partial Derivatives"
   questions:
     - question: |
-        For each of the functions below, $z=f(x,y)$, find the six specified partial derivatives.
+        For each of the functions below, $z=f(x,y)$, find the partial derivatives with respect to $x$ and to $y$. Also find the second order partial derivatives and the cross partial derivatives.
       is_table_question: true
       table_items:
         - item: '$z=x^2-y^2$'
