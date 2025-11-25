@@ -186,7 +186,9 @@
         The first-order conditions are:
         
         $$ \frac{\partial L}{\partial c} = 2-0.25\lambda c^{-0.75}f^{0.75}=0 $$
+        
         $$ \frac{\partial L}{\partial f} = 8-0.75\lambda c^{0.25}f^{-0.25}=0 $$
+        
         $$ \frac{\partial L}{\partial \lambda} = 100-c^{0.25}f^{0.75}=0 $$
         
         Rearranging the first two conditions and dividing gives:
