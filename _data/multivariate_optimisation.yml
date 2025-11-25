@@ -62,6 +62,7 @@
     - question: |
         Consider the following function:
         $$ z(x,y)=x^2+y^2 $$
+        
         a) Find the partial derivatives $\frac{\partial z}{\partial x}$ and $\frac{\partial z}{\partial y}$.
         
         b) Solve the first order conditions to find the coordinates $(x, y, z)$ of any stationary points.
