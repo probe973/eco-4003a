@@ -56,7 +56,15 @@
         
         $\frac{\partial L}{\partial \lambda} = 60-4x-y = 0 \quad [C]$
         
-        From [A] and [B] we get the relationship $y=2x$.
+        From [A] and [B] we get
+
+        $2xy=4\lambda$
+
+        $x^2=\lambda$
+
+        Dividing these equations gives
+
+        $\frac{2y}{x}=4 \implies y=2x$
         
         Substitute this into the constraint [C]:
         
@@ -72,11 +80,11 @@
       answer: 'The optimal solution is 10 units of x and 20 units of y, yielding a maximum utility of 2000.'
 
     - question: |
-        Someone decides that the amount of ‘brain readiness’ (B) from preparing for an exam via reading (r) and via exam practise (p) is given by:
+        Someone decides that the amount of ‘brain readiness’ (B) from preparing for an exam via reading (r) and via exam practice (p) is given by:
         
         $$ B = r^2p^3 $$
         
-        Given that there is a maximum of 8 hours of time each day to prepare, how much time would you give to reading and to exam practise each day?
+        Given that there is a maximum of 8 hours of time each day to prepare, how much time would you give to reading and to exam practice each day?
       solution: |
         The constraint is $r+p \le 8$.
 
@@ -95,7 +103,7 @@
         $r + \frac{3}{2}r = 8 \implies r = 3.2$.
         
         Then $p = 4.8$.
-      answer: 'You should spend 3.2 hours on reading and 4.8 hours on exam practise.'
+      answer: 'You should spend 3.2 hours on reading and 4.8 hours on exam practice.'
 
     - question: |
         A utility function is given by $U(x,y)=x^{0.6}y^{0.4}$. The cost of good x is £5 and good y is £8. The budget is £1200. Find the optimal number of each good to buy and the optimal utility.
@@ -110,13 +118,21 @@
         
         $\frac{\partial L}{\partial y} = 0.4x^{0.6}y^{-0.6} - 8\lambda = 0$
         
-        From these, we find the relationship $x = \frac{12}{5}y$.
+        From these,
+
+        $0.6x^{-0.4}y^{0.4} = 5\lambda$
+
+        $0.4x^{0.6}y^{-0.6} - 8\lambda$
+
+        Dividing these two equations
+
+        $\frac{3y}{2x}=\frac{5}{8} \implies y=\frac{5}{12}x$
         
         Substitute into the constraint:
         
-        $12y+8y=1200 \implies y=60$.
+        $5x+\frac{10}{3}x=1200 \implies x=144$.
         
-        Then $x=144$.
+        Then $y=60$.
         
         $$ U = 144^{0.6} \times 60^{0.4} = 24.87 $$
       answer: 'Optimal bundle is x=144, y=60, which gives a utility of 24.87.'
@@ -155,7 +171,8 @@
         
         Rearranging these gives:
         
-        $5 = 0.6\lambda x^{-0.4}y^{0.4}$ and $8 = 0.4\lambda x^{0.6}y^{-0.6}$.
+        $$5 = 0.6\lambda x^{-0.4}y^{0.4}$$
+        $$8 = 0.4\lambda x^{0.6}y^{-0.6}$$
         
         Dividing the two equations gives:
         
