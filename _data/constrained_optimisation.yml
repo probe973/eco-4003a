@@ -124,7 +124,7 @@
     - question: |
         For the utility function of question 3, a utility of 75 must be achieved. The cost of goods x and y are £5 and £8.
         
-        a) Write down the cost function.
+        a) Write down the cost function, $C$.
         
         b) Write down the constraint function.
         
@@ -142,7 +142,7 @@
         
         **c) Lagrangian**
 
-        We want to MINIMISE cost, so the Lagrangian is:
+        We want to minimise cost, so the Lagrangian is:
         $$ L = 5x+8y + \lambda(75 - x^{0.6}y^{0.4}) $$
 
         **d) Minimum Cost Solution**
@@ -175,7 +175,7 @@
       answer: 'The minimum cost is £882, buying 106 units of x and 44 units of y.'
     
     - question: |
-        My blood sugar (S) is made up of chocolate (c) and fudge (f). It can be calculated with the formula:
+        My blood sugar ($S$) is made up of chocolate ($c$) and fudge ($f$). It can be calculated with the formula:
         $$ S=c^{0.25}f^{0.75} $$
         
         It is important that my blood sugar is 100 units during each day. The cost of 1 chocolate is 2p and the cost of 1 fudge is 8p. How much of each should I buy so that I minimise the cost?
